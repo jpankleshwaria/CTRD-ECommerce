@@ -1,0 +1,11 @@
+.pace-grid-toolbar {
+
+}
+
+.pace-grid-toolbar__buttons {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: end;
+	align-items: end;
+	padding-bottom: 8px;
+}

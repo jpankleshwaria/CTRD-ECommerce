@@ -1,0 +1,583 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\CTRD_ECommerce_Api\\CTRD_ECommerce.Api.csproj": {}
+  },
+  "projects": {
+    "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Domain\\Common.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Domain\\Common.Domain.csproj",
+        "projectName": "Common.Domain",
+        "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Domain\\Common.Domain.csproj",
+        "packagesPath": "C:\\Users\\Jatin.Ankleshwaria\\.nuget\\packages\\",
+        "outputPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jatin.Ankleshwaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[4.1.2, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.6.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Hosting\\Common.Hosting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Hosting\\Common.Hosting.csproj",
+        "projectName": "Common.Hosting",
+        "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Hosting\\Common.Hosting.csproj",
+        "packagesPath": "C:\\Users\\Jatin.Ankleshwaria\\.nuget\\packages\\",
+        "outputPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Hosting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jatin.Ankleshwaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Logging\\Common.Logging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Logging\\Common.Logging.csproj",
+        "projectName": "Common.Logging",
+        "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Logging\\Common.Logging.csproj",
+        "packagesPath": "C:\\Users\\Jatin.Ankleshwaria\\.nuget\\packages\\",
+        "outputPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Logging\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jatin.Ankleshwaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\IOC\\Administration\\Administration.IOC\\Administration.IOC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\IOC\\Administration\\Administration.IOC\\Administration.IOC.csproj",
+        "projectName": "Administration.IOC",
+        "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\IOC\\Administration\\Administration.IOC\\Administration.IOC.csproj",
+        "packagesPath": "C:\\Users\\Jatin.Ankleshwaria\\.nuget\\packages\\",
+        "outputPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\IOC\\Administration\\Administration.IOC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jatin.Ankleshwaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Application\\CTRD_ECommerce.Application.csproj": {
+                "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Application\\CTRD_ECommerce.Application.csproj"
+              },
+              "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Domain\\CTRD_ECommerce.Domain.csproj": {
+                "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Domain\\CTRD_ECommerce.Domain.csproj"
+              },
+              "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Infrastructure\\CTRD_ECommerce.Infrastructure.csproj": {
+                "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Infrastructure\\CTRD_ECommerce.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Application\\CTRD_ECommerce.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Application\\CTRD_ECommerce.Application.csproj",
+        "projectName": "CTRD_ECommerce.Application",
+        "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Application\\CTRD_ECommerce.Application.csproj",
+        "packagesPath": "C:\\Users\\Jatin.Ankleshwaria\\.nuget\\packages\\",
+        "outputPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jatin.Ankleshwaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Domain\\Common.Domain.csproj": {
+                "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Domain\\Common.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\CTRD_ECommerce_Api\\CTRD_ECommerce.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\CTRD_ECommerce_Api\\CTRD_ECommerce.Api.csproj",
+        "projectName": "CTRD_ECommerce.Api",
+        "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\CTRD_ECommerce_Api\\CTRD_ECommerce.Api.csproj",
+        "packagesPath": "C:\\Users\\Jatin.Ankleshwaria\\.nuget\\packages\\",
+        "outputPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\CTRD_ECommerce_Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jatin.Ankleshwaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Domain\\Common.Domain.csproj": {
+                "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Domain\\Common.Domain.csproj"
+              },
+              "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Hosting\\Common.Hosting.csproj": {
+                "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Hosting\\Common.Hosting.csproj"
+              },
+              "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Logging\\Common.Logging.csproj": {
+                "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Common\\Logging\\Common.Logging.csproj"
+              },
+              "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\IOC\\Administration\\Administration.IOC\\Administration.IOC.csproj": {
+                "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\IOC\\Administration\\Administration.IOC\\Administration.IOC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.9.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Domain\\CTRD_ECommerce.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Domain\\CTRD_ECommerce.Domain.csproj",
+        "projectName": "CTRD_ECommerce.Domain",
+        "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Domain\\CTRD_ECommerce.Domain.csproj",
+        "packagesPath": "C:\\Users\\Jatin.Ankleshwaria\\.nuget\\packages\\",
+        "outputPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jatin.Ankleshwaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Infrastructure\\CTRD_ECommerce.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Infrastructure\\CTRD_ECommerce.Infrastructure.csproj",
+        "projectName": "CTRD_ECommerce.Infrastructure",
+        "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Infrastructure\\CTRD_ECommerce.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Jatin.Ankleshwaria\\.nuget\\packages\\",
+        "outputPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jatin.Ankleshwaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Application\\CTRD_ECommerce.Application.csproj": {
+                "projectPath": "D:\\Jatin\\Work\\Reading Interview Talk\\Practical\\Code challenge-V2\\Source\\CTRD_ECommerce\\src\\Service\\Application\\CTRD_ECommerce.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

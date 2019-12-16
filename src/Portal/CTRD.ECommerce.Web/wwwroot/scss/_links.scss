@@ -1,0 +1,40 @@
+@mixin link($color, $darken) {
+	color: $color;
+
+	&:hover,
+	&:focus {
+		color: darken($color, $darken);
+	}
+}
+
+.link-primary {
+	@include link($primary, 20);
+}
+
+.link-secondary {
+	@include link($secondary, 15);
+}
+
+.link-secondary-dark {
+	@include link($secondary-dark, 10);
+}
+
+.link-tertiary {
+	@include link($tertiary, 10);
+}
+
+.link-error {
+	@include link($error-color, 20);
+}
+
+.link-text {
+	@include link(#212121, 20);
+}
+
+.link-label {
+	@include link(#757575, 20);
+}
+
+a {
+	@extend .link-tertiary;
+}

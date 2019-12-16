@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CTRD.ECommerce.Application</name>
+    </assembly>
+    <members>
+        <member name="T:CTRD_ECommerce.Application.Commands.AddProductCommand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CTRD_ECommerce.Application.Commands.AddProductCommand.ProductId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CTRD_ECommerce.Application.Commands.AddProductCommand.ProdCatId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CTRD_ECommerce.Application.Commands.AddProductCommand.ProdName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CTRD_ECommerce.Application.Commands.AddProductCommand.ProdDescription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CTRD_ECommerce.Application.Commands.AddProductCommandHandler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Application.Commands.AddProductCommandHandler.#ctor(CTRD_ECommerce.Application.Interfaces.IProductRepository)">
+            <summary>
+            
+            </summary>
+            <param name="productRepository"></param>
+        </member>
+        <member name="M:CTRD_ECommerce.Application.Commands.AddProductCommandHandler.Handle(CTRD_ECommerce.Application.Commands.AddProductCommand,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CTRD_ECommerce.Application.Commands.Validation.AddProductCommandValidator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Application.Commands.Validation.AddProductCommandValidator.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CTRD_ECommerce.Application.DTO.CspListDTO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CTRD_ECommerce.Application.DTO.CspListDTO.CspServiceId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CTRD_ECommerce.Application.DTO.CspListDTO.ServiceName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CTRD_ECommerce.Application.Interfaces.IProductRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Application.Interfaces.IProductRepository.GetAll">
+            <summary>
+            Gets all.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTRD_ECommerce.Application.Interfaces.IProductRepository.GetProducts(CTRD_ECommerce.Application.Queries.GetProductQuery)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CTRD_ECommerce.Application.Interfaces.IProductRepository.AddProduct(CTRD_ECommerce.Application.Commands.AddProductCommand)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CTRD_ECommerce.Application.Queries.GetCspListDTOQuery">
+            <summary>
+            Get Csp List DTO Query
+            </summary>
+        </member>
+        <member name="T:CTRD_ECommerce.Application.Queries.GetCspListDTOQueryHandler">
+            <summary>
+            Get Csp List CSP Query Handler
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Application.Queries.GetCspListDTOQueryHandler.#ctor(CTRD_ECommerce.Application.Interfaces.IProductRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CTRD_ECommerce.Application.Queries.GetCspListDTOQueryHandler"/> class.
+            </summary>
+            <param name="productRepository">The product repository.</param>
+            
+        </member>
+        <member name="M:CTRD_ECommerce.Application.Queries.GetCspListDTOQueryHandler.Handle(CTRD_ECommerce.Application.Queries.GetCspListDTOQuery,System.Threading.CancellationToken)">
+            <summary>
+            Handles the specified request.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns></returns>
+        </member>
+        <member name="T:CTRD_ECommerce.Application.Queries.GetProductQuery">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CTRD_ECommerce.Application.Queries.GetProductQuery.prodName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Application.Queries.GetProductQuery.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="productName"></param>
+        </member>
+        <member name="T:CTRD_ECommerce.Application.Queries.GetProductQueryHandler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Application.Queries.GetProductQueryHandler.#ctor(CTRD_ECommerce.Application.Interfaces.IProductRepository)">
+            <summary>
+            
+            </summary>
+            <param name="productRepository"></param>
+        </member>
+        <member name="M:CTRD_ECommerce.Application.Queries.GetProductQueryHandler.Handle(CTRD_ECommerce.Application.Queries.GetProductQuery,System.Threading.CancellationToken)">
+            <summary>
+            Handles the specified request.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns></returns>
+        </member>
+        <member name="T:CTRD_ECommerce.Application.ViewModels.ProductViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CTRD_ECommerce.Application.ViewModels.ProductViewModel.ProductId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CTRD_ECommerce.Application.ViewModels.ProductViewModel.ProdCatName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CTRD_ECommerce.Application.ViewModels.ProductViewModel.ProdName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CTRD_ECommerce.Application.ViewModels.ProductViewModel.ProdDescription">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

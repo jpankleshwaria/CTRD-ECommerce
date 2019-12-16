@@ -1,0 +1,326 @@
+
+@import "variables";
+
+//$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// $font-family: 'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$font-size: 16px;
+// $btn-font-size: $font-size;
+// $input-font-size: $font-size;
+// $float-label-font-size: $font-size;
+$error-font-color: $error-color;
+
+$input-font-size: $font-size;
+$input-padding: 6px 0 6px;
+$float-input-padding: $input-padding;
+$float-placeholder-font-size: $font-size;
+
+//$accent: #daa803;
+$accent: $primary;
+$btn-color: #fff;
+$btn-bgcolor: rgb(132, 75, 0);
+//$btn-bgcolor: $primary;
+$btn-focus-bgcolor: mix($btn-color, $btn-bgcolor, 12%);
+
+$btn-outline-color: $btn-bgcolor;
+// $btn-outline-bgcolor: transparent !default;
+// $btn-outline-hover-color: $btn-color !default;
+// $btn-outline-focus-color: $btn-color !default;
+// $btn-outline-active-color: $btn-color !default;
+$btn-outline-border-color: $btn-bgcolor;
+$btn-outline-hover-bgcolor: $btn-bgcolor;
+$btn-outline-focus-bgcolor: $btn-focus-bgcolor;
+$btn-outline-active-bgcolor: $btn-focus-bgcolor;
+// $btn-outline-default-focus-border-color: $btn-hover-border-color !default;
+
+$outline-border-color: rgba(#000, .24);
+$grid-hover-bg-color: #D9E7F6;
+$grid-cell-selection-bg-color: $grid-hover-bg-color;
+$grid-row-selection-bg-color: $grid-hover-bg-color;
+$grid-cell-border-color: transparent;
+$grid-header-border-color: #F0F0F7;
+$pager-border-color: #F0F0F7;
+
+$dialog-bigger-header-content-font-size: 24px;
+$dialog-bigger-content-font-size: inherit;
+
+$cbox-bigger-height: 18px;
+$cbox-bigger-lineheight: 10px;
+$cbox-bigger-width: 18px;
+$cbox-color: rgba(#000, .54) !default;
+$cbox-bigger-font-size: 12px;
+$cbox-ripple-bigger-size: -9px;
+$cbox-ripple-bigger-height: 36px;
+$cbox-ripple-bigger-width: 36px;
+
+
+$is-roboto-loaded: true;
+
+// modules are disabled by adding them to this array.
+// to enable a module comment it out.
+// confusing? yes.
+// please implement all needed modules in examples so we can do a quick spot check after compiling this.
+$imported-modules: (
+								// base-core, base-icons, base-desktop, base-tablet, base-phone, base-animation,
+								// button-layout, button-theme,
+								// pager-material-icons, pager-layout, pager-theme,
+								// dropdownbase-material, dropdownbase-layout, dropdownbase-theme,
+								// popup-layout,
+								// spinner-layout, spinner-theme,
+	// listview-layout, listview-theme,
+								// hscroll-material-icons, h-scroll, h-scroll-theme,
+	vscroll-material-icons, v-scroll, v-scroll-theme,
+	sidebar-theme,
+	field-list-icons, field-list-layout, field-list-theme,
+	recurrence-editor-layout,
+	avatar-layout,
+	card-layout, card-theme,
+	dashboardlayout-material-icons,
+	dashboardlayout-layout,
+	dashboardlayout-theme,
+								// grid-material-icons, grid-layout, grid-theme,
+								// radiobutton-layout, radiobutton-theme,
+								// check-box-material-icons, checkbox-layout, checkbox-theme,
+	switch-layout, switch-theme,
+	chip-layout, chip-theme,
+								// input-material-icons, input-layout, input-theme,
+	numerictextbox-material-icons, numerictextbox-theme,
+	maskedtextbox-layout, maskedit-theme,
+	slider-layout, slider-theme,
+								// uploader-material-icons, uploader-layout, uploader-theme,
+	color-picker-material-icons, color-picker-layout, color-picker-theme,
+								// dropdownlist-material, dropdownlist-material-icons, dropdownlist-layout, dropdownlist-theme, multiselect-material-icons,
+	list-box-material-icons, listbox-layout, listbox-theme,
+	tooltip-layout, tooltip-theme,
+								// dialog-bootstrap-icons, dialog-layout, dialog-theme,
+	split-button-layout, split-button-theme,
+	drop-down-button-material-icons, drop-down-button-layout, drop-down-button-theme,
+
+								// button-group-layout, button-group-theme,
+	progress-button-layout, progress-button-theme,
+								// datepicker-material-icons, datepicker-layout, datepicker-theme,
+								// calendar-material-icons,
+								// calendar-layout, calendar-theme,
+								// datetimepicker-material-icons, datetimepicker-layout, datetimepicker-theme,
+								// timepicker-material-icons, timepicker-layout, timepicker-theme,
+								// daterangepicker-material-icons, daterangepicker-layout, daterangepicker-theme,
+								// toolbar-material-icons, toolbar-layout, toolbar-theme,
+	context-menu-material-icons, contextmenu-layout, contextmenu-theme,
+	accordion-material-icons, accordion-layout, accordion-theme,
+								// tab-material-icons, tab-layout, tab-theme,
+	treeview-material-icons, treeview-layout, treeview-theme,
+	menu-material-icons, menu-layout, menu-theme,
+	pivotview-icons, pivotview-layout, pivotview-theme,
+	treegrid-icons, tree-layout,
+	schedule-material-icons, schedule-layout, schedule-theme,
+	gantt-material-icons, gantt-layout, gantt-theme,
+	splitter-material-icons, splitter-layout, splitter-theme,
+	richtexteditor-material-icons, richtexteditor-layout, richtexteditor-theme,
+	inplaceeditor-material-icons, inplaceeditor-layout, inplaceeditor-theme,
+	query-builder-material-icons, querybuilder-layout, querybuilder-theme,
+								// badge-layout, badge-theme,
+	toast-material-icons, toast-layout,
+	FileManager-material-icons, FileManager-layout, FileManager-theme
+);
+
+
+
+
+
+
+
+@import "../lib/syncfusion/material.scss";
+
+
+.e-btn {
+	letter-spacing: 1px;
+}
+
+
+// $btn-secondary-bgcolor: $secondary;
+// border-color: $btn-primary-border-color;
+// color: $btn-primary-color;
+// background-color: $btn-primary-hover-bgcolor;
+// border-color: $btn-primary-hover-border-color;
+// box-shadow: $btn-hover-focus-box-shadow;
+// color: $btn-primary-hover-color;
+// @include  primary-focus;
+// @include primary-active;
+// background-color: $btn-primary-active-bgcolor;
+// border-color: $btn-primary-active-border-color;
+// box-shadow: $btn-active-box-shadow;
+// color: $btn-primary-active-color;
+// @include primary-disabled;
+// background-color: $btn-ripple-primary-bgcolor;
+
+
+/*! button theme */
+// sass-lint:disable no-vendor-prefixes
+#{&}.e-btn,
+.e-css.e-btn {
+	@at-root {
+		&.e-secondary {
+			background-color: $btn-primary-bgcolor;
+			border-color: $btn-primary-border-color;
+			color: $btn-primary-color;
+
+			&:hover {
+				background-color: $btn-primary-hover-bgcolor;
+				border-color: $btn-primary-hover-border-color;
+				box-shadow: $btn-hover-focus-box-shadow;
+				color: $btn-primary-hover-color;
+			}
+
+			&:focus {
+				@include  primary-focus;
+			}
+
+			&:active {
+				@include primary-active;
+			}
+
+			&.e-active {
+				background-color: $btn-primary-active-bgcolor;
+				border-color: $btn-primary-active-border-color;
+				box-shadow: $btn-active-box-shadow;
+				color: $btn-primary-active-color;
+			}
+
+			&:disabled {
+				@include primary-disabled;
+			}
+
+			& .e-ripple-element {
+				background-color: $btn-ripple-primary-bgcolor;
+			}
+		}
+	}
+}
+
+@mixin create-button($selector, $color) {
+	.e-btn {
+		&#{$selector} {
+			background-color: $color;
+			border-color: transparent;
+			color: #fff;
+			
+			&:hover {
+				background-color: mix($color, #fff, 90%);
+			}
+
+			&:focus {
+				background-color: mix($color, #fff, 80%);
+			}
+
+			&:active {
+				background-color: mix($color, #fff, 70%);
+			}
+
+			&:disabled {
+				@include primary-disabled;
+			}
+		}
+
+		&.e-outline {
+			&#{$selector} {
+				background-color: transparent;
+				border-color: $outline-border-color;
+				color: $color;
+
+				&:hover {
+					background-color: mix($color, #fff, 90%);
+					border-color: transparent;
+					color: #fff;
+					box-shadow: none;
+				}
+
+				&:focus {
+					background-color: mix($color, #fff, 80%);
+					border-color: transparent;
+					color: #fff;
+				}
+
+				&:active {
+					background-color: mix($color, #fff, 70%);
+					border-color: transparent;
+					color: #fff;
+				}
+
+				&:disabled {
+					@include outline-disabled;
+				}
+			}
+        }
+	}
+}
+
+@include create-button('.e-secondary', $secondary);
+@include create-button('.e-secondary-dark', $secondary-dark);
+@include create-button('.e-tertiary', $tertiary);
+
+.e-btn.e-outline {
+	&.e-primary,
+	&.e-secondary,
+	&.e-secondary-dark,
+	&.e-tertiary,
+	&.e-info {
+		border-color: $outline-border-color;
+	}
+}
+
+// support material icons in e-btn
+.e-btn.material-icons {
+	font-family: 'Material Icons';
+	text-transform: none;
+	font-size: 24px;
+	line-height: 28px;
+	padding-left: 6px;
+	padding-right: 6px;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+// grids
+.e-bigger .e-grid {
+	.e-row {
+		background-color: #F7F7FB;
+	}
+
+	.e-altrow {
+		background-color: #FFFFFF;
+	}
+
+	.e-headercelldiv {
+		text-transform: uppercase;
+		color: #B4BAC6;
+		letter-spacing: 1px;
+		font-size: 11px;
+	}
+
+	.e-rowcell {
+		font-size: 15px;
+		line-height: 22px;
+		color: #8A96A0;
+		padding: 10px 28px;
+		line-height: 22px;
+	}
+
+	.e-headercell {
+		height: 42px;
+	}
+	
+	.e-gridcontent tr.e-row .e-rowcell:empty {
+		height: 42px;
+	}
+
+	col.e-drag-intent {
+		width: 35px !important;
+	}
+
+	.column-bold {
+		font-weight: 600;
+		color: #354052;
+	}
+}

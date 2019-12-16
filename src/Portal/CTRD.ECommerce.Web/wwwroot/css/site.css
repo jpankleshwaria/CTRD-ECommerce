@@ -1,0 +1,4551 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+/* make SyncFusion consistent */
+/* line 4, ../../Users/Jatin/Web/Portal/wwwroot/scss/_syncfusion-fixes.scss */
+.e-dlg-header,
+.e-dlg-header * {
+    color: #005CA2;
+}
+
+/* line 14, ../../Users/Jatin/Web/Portal/wwwroot/scss/_syncfusion-fixes.scss */
+.e-helper-text {
+    font-size: .75rem;
+    margin: 3px 0;
+}
+
+/* line 22, ../../Users/Jatin/Web/Portal/wwwroot/scss/_syncfusion-fixes.scss */
+.e-ddl .e-helper-text {
+    position: absolute;
+    bottom: -25px;
+}
+
+/* line 39, ../../Users/Jatin/Web/Portal/wwwroot/scss/_syncfusion-fixes.scss */
+.required-field ~ label:not(.e-helper-text)::after {
+    content: " * ";
+    color: #E02020;
+    font-size: 16px;
+    line-height: 10px;
+}
+
+/* line 46, ../../Users/Jatin/Web/Portal/wwwroot/scss/_syncfusion-fixes.scss */
+.e-tab .e-tab-header .e-toolbar-item .e-tab-text {
+    letter-spacing: 1px;
+}
+
+/* line 50, ../../Users/Jatin/Web/Portal/wwwroot/scss/_syncfusion-fixes.scss */
+.e-float-input.e-date-range-wrapper .e-daterange-hidden {
+    display: none;
+}
+
+/* line 57, ../../Users/Jatin/Web/Portal/wwwroot/scss/_syncfusion-fixes.scss */
+.e-edit-dialog .e-gridform .e-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/* line 1, ../../Users/Jatin/Web/Portal/wwwroot/scss/_global.scss */
+* {
+    box-sizing: border-box;
+}
+
+/* line 5, ../../Users/Jatin/Web/Portal/wwwroot/scss/_global.scss */
+body {
+    margin: 0;
+    background: #fafbfc;
+}
+
+/* line 10, ../../Users/Jatin/Web/Portal/wwwroot/scss/_global.scss */
+.pace-top-app-bar {
+    z-index: 6;
+}
+
+/* line 14, ../../Users/Jatin/Web/Portal/wwwroot/scss/_global.scss */
+.pace-content-root {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* line 19, ../../Users/Jatin/Web/Portal/wwwroot/scss/_global.scss */
+.main-content {
+    flex: 0 0 calc(100% - 256px);
+    margin-left: 256px;
+    padding: 2rem 3rem;
+    overflow: auto;
+    max-width: 1200px;
+}
+/* line 27, ../../Users/Jatin/Web/Portal/wwwroot/scss/_global.scss */
+.sidebar-collapsed .main-content {
+    flex: 0 0 calc(100% - 53px);
+    margin-left: 53px;
+}
+
+/* line 33, ../../Users/Jatin/Web/Portal/wwwroot/scss/_global.scss */
+body.loading .main-content {
+    visibility: hidden;
+}
+
+/* line 1, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+.pace-branding {
+    padding-left: 2px;
+    background: #fff;
+    position: relative;
+    flex-grow: 0;
+}
+    /* line 11, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+    .pace-branding::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        width: 0;
+        height: 0;
+        border-right: 115px solid transparent;
+        border-top: 110px solid #fff;
+    }
+    /* line 22, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+    .pace-branding .material-icons {
+        color: #222;
+    }
+
+/* line 32, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+.pace-account-link {
+    display: flex;
+    align-items: center;
+}
+
+/* line 37, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+.pace-icon-circle {
+    background: #3373C3;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1px;
+    padding-bottom: 2px;
+}
+
+/* line 50, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+.pace-welcome {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+/* line 56, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+.pace-welcome-name {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* line 62, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+.pace-status {
+    display: flex;
+    margin-right: 30px;
+}
+
+/* line 67, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+.pace-status-chip {
+    background: #fff;
+    border: 2px solid #3373C3;
+    border-radius: 15px;
+    margin: 0 10px;
+    font-size: 14px;
+    color: #3373C3;
+    height: 30px;
+    display: flex;
+    padding: 0 16px 0 0;
+    align-items: center;
+    font-weight: 500;
+}
+
+/* line 81, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+.pace-status-chip-icon {
+    font-size: 21px;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+    line-height: 29px;
+    text-align: center;
+    margin: 0 6px 0 -2px;
+    color: #fff;
+    background: #3373C3;
+}
+
+/* line 96, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+.pace-status-chip--call {
+    border-color: #A2CF4B;
+    color: #A2CF4B;
+}
+    /* line 99, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+    .pace-status-chip--call .pace-status-chip-icon {
+        background: #A2CF4B;
+    }
+
+/* line 104, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+.pace-status-chip--disconnected {
+    border-color: #ED881E;
+    color: #ED881E;
+    padding-right: 0;
+}
+    /* line 108, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+    .pace-status-chip--disconnected .pace-status-chip-icon {
+        color: #ED881E;
+        background: transparent;
+        margin-right: -2px;
+        margin-left: -2px;
+    }
+
+/* line 116, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+.pace-status-chip--idle {
+    border-color: #ED881E;
+    color: #ED881E;
+}
+    /* line 119, ../../Users/Jatin/Web/Portal/wwwroot/scss/_header.scss */
+    .pace-status-chip--idle .pace-status-chip-icon {
+        background: #ED881E;
+    }
+
+/* line 1, ../../Users/Jatin/Web/Portal/wwwroot/scss/_headings.scss */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1rem;
+    font-weight: 400;
+    color: #005CA2;
+}
+
+/* line 11, ../../Users/Jatin/Web/Portal/wwwroot/scss/_headings.scss */
+h2 {
+    font-size: 25px;
+}
+
+/* line 15, ../../Users/Jatin/Web/Portal/wwwroot/scss/_headings.scss */
+h3 {
+    font-size: 21px;
+}
+
+/* line 1, ../../Users/Jatin/Web/Portal/wwwroot/scss/_sidebar.scss */
+.pace-sidebar {
+    flex: 0 1 auto;
+    height: calc(100vh - 64px);
+    position: fixed;
+    top: 64px;
+    z-index: 4;
+    background: #3373C3;
+    border: 0;
+}
+
+    /* line 11, ../../Users/Jatin/Web/Portal/wwwroot/scss/_sidebar.scss */
+    .pace-sidebar .mdc-list-item {
+        margin: 0;
+        color: #fff;
+        border-bottom: 1px solid #4d88d0;
+    }
+
+    /* line 17, ../../Users/Jatin/Web/Portal/wwwroot/scss/_sidebar.scss */
+    .pace-sidebar .mdc-list-item--activated {
+        color: #fff;
+    }
+
+    /* line 22, ../../Users/Jatin/Web/Portal/wwwroot/scss/_sidebar.scss */
+    .pace-sidebar :not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item--activated::before {
+        opacity: 0.5;
+    }
+
+    /* line 27, ../../Users/Jatin/Web/Portal/wwwroot/scss/_sidebar.scss */
+    .pace-sidebar .mdc-list-item__text,
+    .pace-sidebar .mdc-list-item__graphic {
+        z-index: 1;
+    }
+
+    /* line 32, ../../Users/Jatin/Web/Portal/wwwroot/scss/_sidebar.scss */
+    .pace-sidebar .mdc-list-item__graphic {
+        color: #fff;
+        margin-left: 6px;
+    }
+
+    /* line 37, ../../Users/Jatin/Web/Portal/wwwroot/scss/_sidebar.scss */
+    .pace-sidebar .mdc-list-item--activated .mdc-list-item__graphic {
+        color: #fff;
+    }
+
+    /* line 41, ../../Users/Jatin/Web/Portal/wwwroot/scss/_sidebar.scss */
+    .pace-sidebar .mdc-list-item:nth-last-child(1) {
+        border-bottom: 0;
+    }
+
+/* line 45, ../../Users/Jatin/Web/Portal/wwwroot/scss/_sidebar.scss */
+.sidebar-collapsed .pace-sidebar {
+    width: 53px;
+}
+    /* line 48, ../../Users/Jatin/Web/Portal/wwwroot/scss/_sidebar.scss */
+    .sidebar-collapsed .pace-sidebar .mdc-list-item__text {
+        display: none;
+    }
+
+/* line 2, ../../Users/Jatin/Web/Portal/wwwroot/scss/_panel.scss */
+.pace-panel {
+    margin-bottom: 3rem;
+    background: #fff;
+    border: 1px solid #ebedf7;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+/* line 18, ../../Users/Jatin/Web/Portal/wwwroot/scss/_panel.scss */
+.pace-panel__header {
+    padding: 1.25rem 1.25rem;
+    background: #e7e9ed;
+}
+    /* line 26, ../../Users/Jatin/Web/Portal/wwwroot/scss/_panel.scss */
+    .pace-panel__header h1, .pace-panel__header h2, .pace-panel__header h3, .pace-panel__header h4, .pace-panel__header h5, .pace-panel__header h6 {
+        margin: 0;
+        padding: 0;
+    }
+
+/* line 32, ../../Users/Jatin/Web/Portal/wwwroot/scss/_panel.scss */
+.pace-panel__body {
+    padding: 1.25rem;
+}
+
+/* line 36, ../../Users/Jatin/Web/Portal/wwwroot/scss/_panel.scss */
+.pace-panel--merge-down {
+    margin-bottom: 0;
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* line 43, ../../Users/Jatin/Web/Portal/wwwroot/scss/_panel.scss */
+.pace-panel--merge-up {
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* line 5, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid-toolbar.scss */
+.pace-grid-toolbar__buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 8px;
+}
+
+/* line 1, ../../Users/Jatin/Web/Portal/wwwroot/scss/_dialog.scss */
+.message-icon {
+    width: 90px;
+    height: 90px;
+    background: #005CA2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem;
+}
+/* line 11, ../../Users/Jatin/Web/Portal/wwwroot/scss/_dialog.scss */
+.dialog-success .message-icon {
+    background: #20bf55;
+}
+/* line 15, ../../Users/Jatin/Web/Portal/wwwroot/scss/_dialog.scss */
+.dialog-error .message-icon {
+    background: #E02020;
+}
+/* line 19, ../../Users/Jatin/Web/Portal/wwwroot/scss/_dialog.scss */
+.dialog-info .message-icon {
+    background: #1e91d6;
+}
+/* line 23, ../../Users/Jatin/Web/Portal/wwwroot/scss/_dialog.scss */
+.dialog-confirm .message-icon {
+    background: #1e91d6;
+}
+
+/* line 28, ../../Users/Jatin/Web/Portal/wwwroot/scss/_dialog.scss */
+.message-icon .material-icons {
+    font-size: 48px;
+    color: #fff;
+}
+
+/* line 1, ../../Users/Jatin/Web/Portal/wwwroot/scss/_login.scss */
+.login-page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* line 7, ../../Users/Jatin/Web/Portal/wwwroot/scss/_login.scss */
+.login-page__left {
+    flex: 1;
+    background-color: #eee;
+    background-image: url(/img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* line 20, ../../Users/Jatin/Web/Portal/wwwroot/scss/_login.scss */
+.login-page__right {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* line 29, ../../Users/Jatin/Web/Portal/wwwroot/scss/_login.scss */
+.login-page__title {
+    font-size: 46px;
+    padding: 50px;
+    background: rgba(0, 92, 162, 0.7);
+    color: #fff;
+}
+
+/* line 36, ../../Users/Jatin/Web/Portal/wwwroot/scss/_login.scss */
+.login-page__form {
+    width: 350px;
+}
+
+/* line 40, ../../Users/Jatin/Web/Portal/wwwroot/scss/_login.scss */
+.login-page__password-toggle {
+    position: absolute;
+    top: 7px;
+    left: calc(100% - 30px);
+    user-select: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+    /* line 47, ../../Users/Jatin/Web/Portal/wwwroot/scss/_login.scss */
+    .login-page__password-toggle:hover {
+        opacity: 1;
+    }
+
+/* line 3, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    /* line 12, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* line 18, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    /* line 24, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* line 30, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* line 35, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* line 43, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* line 52, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+    /* line 57, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .no-gutters > .col,
+    .no-gutters > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+/* line 63, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* line 75, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+/* line 83, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+
+/* line 90, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+}
+
+/* line 96, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+/* line 102, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+/* line 108, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+/* line 114, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+/* line 120, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+/* line 126, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+/* line 132, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+/* line 138, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+/* line 144, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+/* line 150, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+
+/* line 156, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* line 162, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-first {
+    -ms-flex-order: -1;
+    order: -1;
+}
+
+/* line 167, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-last {
+    -ms-flex-order: 13;
+    order: 13;
+}
+
+/* line 172, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-0 {
+    -ms-flex-order: 0;
+    order: 0;
+}
+
+/* line 177, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-1 {
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+/* line 182, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-2 {
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+/* line 187, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-3 {
+    -ms-flex-order: 3;
+    order: 3;
+}
+
+/* line 192, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-4 {
+    -ms-flex-order: 4;
+    order: 4;
+}
+
+/* line 197, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-5 {
+    -ms-flex-order: 5;
+    order: 5;
+}
+
+/* line 202, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-6 {
+    -ms-flex-order: 6;
+    order: 6;
+}
+
+/* line 207, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-7 {
+    -ms-flex-order: 7;
+    order: 7;
+}
+
+/* line 212, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-8 {
+    -ms-flex-order: 8;
+    order: 8;
+}
+
+/* line 217, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-9 {
+    -ms-flex-order: 9;
+    order: 9;
+}
+
+/* line 222, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-10 {
+    -ms-flex-order: 10;
+    order: 10;
+}
+
+/* line 227, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-11 {
+    -ms-flex-order: 11;
+    order: 11;
+}
+
+/* line 232, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.order-12 {
+    -ms-flex-order: 12;
+    order: 12;
+}
+
+/* line 237, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.offset-1 {
+    margin-left: 8.333333%;
+}
+
+/* line 241, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.offset-2 {
+    margin-left: 16.666667%;
+}
+
+/* line 245, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.offset-3 {
+    margin-left: 25%;
+}
+
+/* line 249, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.offset-4 {
+    margin-left: 33.333333%;
+}
+
+/* line 253, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.offset-5 {
+    margin-left: 41.666667%;
+}
+
+/* line 257, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.offset-6 {
+    margin-left: 50%;
+}
+
+/* line 261, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.offset-7 {
+    margin-left: 58.333333%;
+}
+
+/* line 265, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.offset-8 {
+    margin-left: 66.666667%;
+}
+
+/* line 269, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.offset-9 {
+    margin-left: 75%;
+}
+
+/* line 273, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.offset-10 {
+    margin-left: 83.333333%;
+}
+
+/* line 277, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+.offset-11 {
+    margin-left: 91.666667%;
+}
+
+@media (min-width: 576px) {
+    /* line 282, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    /* line 289, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+    /* line 295, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm-1 {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+    /* line 300, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    /* line 305, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    /* line 310, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    /* line 315, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    /* line 320, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    /* line 325, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    /* line 330, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    /* line 335, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    /* line 340, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    /* line 345, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm-11 {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+    /* line 350, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-sm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    /* line 355, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-first {
+        -ms-flex-order: -1;
+        order: -1;
+    }
+    /* line 359, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-last {
+        -ms-flex-order: 13;
+        order: 13;
+    }
+    /* line 363, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-0 {
+        -ms-flex-order: 0;
+        order: 0;
+    }
+    /* line 367, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-1 {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    /* line 371, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-2 {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    /* line 375, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-3 {
+        -ms-flex-order: 3;
+        order: 3;
+    }
+    /* line 379, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-4 {
+        -ms-flex-order: 4;
+        order: 4;
+    }
+    /* line 383, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-5 {
+        -ms-flex-order: 5;
+        order: 5;
+    }
+    /* line 387, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-6 {
+        -ms-flex-order: 6;
+        order: 6;
+    }
+    /* line 391, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-7 {
+        -ms-flex-order: 7;
+        order: 7;
+    }
+    /* line 395, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-8 {
+        -ms-flex-order: 8;
+        order: 8;
+    }
+    /* line 399, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-9 {
+        -ms-flex-order: 9;
+        order: 9;
+    }
+    /* line 403, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-10 {
+        -ms-flex-order: 10;
+        order: 10;
+    }
+    /* line 407, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-11 {
+        -ms-flex-order: 11;
+        order: 11;
+    }
+    /* line 411, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-sm-12 {
+        -ms-flex-order: 12;
+        order: 12;
+    }
+    /* line 415, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-sm-0 {
+        margin-left: 0;
+    }
+    /* line 418, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-sm-1 {
+        margin-left: 8.333333%;
+    }
+    /* line 421, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-sm-2 {
+        margin-left: 16.666667%;
+    }
+    /* line 424, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-sm-3 {
+        margin-left: 25%;
+    }
+    /* line 427, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-sm-4 {
+        margin-left: 33.333333%;
+    }
+    /* line 430, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-sm-5 {
+        margin-left: 41.666667%;
+    }
+    /* line 433, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-sm-6 {
+        margin-left: 50%;
+    }
+    /* line 436, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-sm-7 {
+        margin-left: 58.333333%;
+    }
+    /* line 439, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-sm-8 {
+        margin-left: 66.666667%;
+    }
+    /* line 442, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-sm-9 {
+        margin-left: 75%;
+    }
+    /* line 445, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-sm-10 {
+        margin-left: 83.333333%;
+    }
+    /* line 448, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-sm-11 {
+        margin-left: 91.666667%;
+    }
+}
+
+@media (min-width: 768px) {
+    /* line 454, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    /* line 461, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+    /* line 467, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md-1 {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+    /* line 472, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    /* line 477, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    /* line 482, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    /* line 487, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    /* line 492, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    /* line 497, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    /* line 502, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    /* line 507, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    /* line 512, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    /* line 517, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md-11 {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+    /* line 522, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-md-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    /* line 527, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-first {
+        -ms-flex-order: -1;
+        order: -1;
+    }
+    /* line 531, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-last {
+        -ms-flex-order: 13;
+        order: 13;
+    }
+    /* line 535, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-0 {
+        -ms-flex-order: 0;
+        order: 0;
+    }
+    /* line 539, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-1 {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    /* line 543, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-2 {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    /* line 547, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-3 {
+        -ms-flex-order: 3;
+        order: 3;
+    }
+    /* line 551, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-4 {
+        -ms-flex-order: 4;
+        order: 4;
+    }
+    /* line 555, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-5 {
+        -ms-flex-order: 5;
+        order: 5;
+    }
+    /* line 559, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-6 {
+        -ms-flex-order: 6;
+        order: 6;
+    }
+    /* line 563, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-7 {
+        -ms-flex-order: 7;
+        order: 7;
+    }
+    /* line 567, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-8 {
+        -ms-flex-order: 8;
+        order: 8;
+    }
+    /* line 571, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-9 {
+        -ms-flex-order: 9;
+        order: 9;
+    }
+    /* line 575, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-10 {
+        -ms-flex-order: 10;
+        order: 10;
+    }
+    /* line 579, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-11 {
+        -ms-flex-order: 11;
+        order: 11;
+    }
+    /* line 583, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-md-12 {
+        -ms-flex-order: 12;
+        order: 12;
+    }
+    /* line 587, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-md-0 {
+        margin-left: 0;
+    }
+    /* line 590, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-md-1 {
+        margin-left: 8.333333%;
+    }
+    /* line 593, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-md-2 {
+        margin-left: 16.666667%;
+    }
+    /* line 596, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-md-3 {
+        margin-left: 25%;
+    }
+    /* line 599, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-md-4 {
+        margin-left: 33.333333%;
+    }
+    /* line 602, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-md-5 {
+        margin-left: 41.666667%;
+    }
+    /* line 605, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-md-6 {
+        margin-left: 50%;
+    }
+    /* line 608, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-md-7 {
+        margin-left: 58.333333%;
+    }
+    /* line 611, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-md-8 {
+        margin-left: 66.666667%;
+    }
+    /* line 614, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-md-9 {
+        margin-left: 75%;
+    }
+    /* line 617, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-md-10 {
+        margin-left: 83.333333%;
+    }
+    /* line 620, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-md-11 {
+        margin-left: 91.666667%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* line 626, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    /* line 633, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+    /* line 639, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg-1 {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+    /* line 644, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    /* line 649, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    /* line 654, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    /* line 659, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    /* line 664, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    /* line 669, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    /* line 674, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    /* line 679, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    /* line 684, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    /* line 689, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg-11 {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+    /* line 694, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-lg-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    /* line 699, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-first {
+        -ms-flex-order: -1;
+        order: -1;
+    }
+    /* line 703, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-last {
+        -ms-flex-order: 13;
+        order: 13;
+    }
+    /* line 707, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-0 {
+        -ms-flex-order: 0;
+        order: 0;
+    }
+    /* line 711, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-1 {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    /* line 715, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-2 {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    /* line 719, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-3 {
+        -ms-flex-order: 3;
+        order: 3;
+    }
+    /* line 723, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-4 {
+        -ms-flex-order: 4;
+        order: 4;
+    }
+    /* line 727, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-5 {
+        -ms-flex-order: 5;
+        order: 5;
+    }
+    /* line 731, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-6 {
+        -ms-flex-order: 6;
+        order: 6;
+    }
+    /* line 735, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-7 {
+        -ms-flex-order: 7;
+        order: 7;
+    }
+    /* line 739, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-8 {
+        -ms-flex-order: 8;
+        order: 8;
+    }
+    /* line 743, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-9 {
+        -ms-flex-order: 9;
+        order: 9;
+    }
+    /* line 747, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-10 {
+        -ms-flex-order: 10;
+        order: 10;
+    }
+    /* line 751, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-11 {
+        -ms-flex-order: 11;
+        order: 11;
+    }
+    /* line 755, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-lg-12 {
+        -ms-flex-order: 12;
+        order: 12;
+    }
+    /* line 759, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-lg-0 {
+        margin-left: 0;
+    }
+    /* line 762, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-lg-1 {
+        margin-left: 8.333333%;
+    }
+    /* line 765, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-lg-2 {
+        margin-left: 16.666667%;
+    }
+    /* line 768, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-lg-3 {
+        margin-left: 25%;
+    }
+    /* line 771, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-lg-4 {
+        margin-left: 33.333333%;
+    }
+    /* line 774, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-lg-5 {
+        margin-left: 41.666667%;
+    }
+    /* line 777, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-lg-6 {
+        margin-left: 50%;
+    }
+    /* line 780, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-lg-7 {
+        margin-left: 58.333333%;
+    }
+    /* line 783, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-lg-8 {
+        margin-left: 66.666667%;
+    }
+    /* line 786, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-lg-9 {
+        margin-left: 75%;
+    }
+    /* line 789, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-lg-10 {
+        margin-left: 83.333333%;
+    }
+    /* line 792, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-lg-11 {
+        margin-left: 91.666667%;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* line 798, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    /* line 805, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+    /* line 811, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl-1 {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+    /* line 816, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    /* line 821, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    /* line 826, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    /* line 831, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    /* line 836, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    /* line 841, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    /* line 846, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    /* line 851, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    /* line 856, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    /* line 861, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl-11 {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+    /* line 866, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .col-xl-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    /* line 871, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-first {
+        -ms-flex-order: -1;
+        order: -1;
+    }
+    /* line 875, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-last {
+        -ms-flex-order: 13;
+        order: 13;
+    }
+    /* line 879, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-0 {
+        -ms-flex-order: 0;
+        order: 0;
+    }
+    /* line 883, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-1 {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    /* line 887, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-2 {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    /* line 891, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-3 {
+        -ms-flex-order: 3;
+        order: 3;
+    }
+    /* line 895, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-4 {
+        -ms-flex-order: 4;
+        order: 4;
+    }
+    /* line 899, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-5 {
+        -ms-flex-order: 5;
+        order: 5;
+    }
+    /* line 903, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-6 {
+        -ms-flex-order: 6;
+        order: 6;
+    }
+    /* line 907, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-7 {
+        -ms-flex-order: 7;
+        order: 7;
+    }
+    /* line 911, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-8 {
+        -ms-flex-order: 8;
+        order: 8;
+    }
+    /* line 915, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-9 {
+        -ms-flex-order: 9;
+        order: 9;
+    }
+    /* line 919, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-10 {
+        -ms-flex-order: 10;
+        order: 10;
+    }
+    /* line 923, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-11 {
+        -ms-flex-order: 11;
+        order: 11;
+    }
+    /* line 927, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .order-xl-12 {
+        -ms-flex-order: 12;
+        order: 12;
+    }
+    /* line 931, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-xl-0 {
+        margin-left: 0;
+    }
+    /* line 934, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-xl-1 {
+        margin-left: 8.333333%;
+    }
+    /* line 937, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-xl-2 {
+        margin-left: 16.666667%;
+    }
+    /* line 940, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-xl-3 {
+        margin-left: 25%;
+    }
+    /* line 943, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-xl-4 {
+        margin-left: 33.333333%;
+    }
+    /* line 946, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-xl-5 {
+        margin-left: 41.666667%;
+    }
+    /* line 949, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-xl-6 {
+        margin-left: 50%;
+    }
+    /* line 952, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-xl-7 {
+        margin-left: 58.333333%;
+    }
+    /* line 955, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-xl-8 {
+        margin-left: 66.666667%;
+    }
+    /* line 958, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-xl-9 {
+        margin-left: 75%;
+    }
+    /* line 961, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-xl-10 {
+        margin-left: 83.333333%;
+    }
+    /* line 964, ../../Users/Jatin/Web/Portal/wwwroot/scss/_grid.scss */
+    .offset-xl-11 {
+        margin-left: 91.666667%;
+    }
+}
+
+/* line 8, ../../Users/Jatin/Web/Portal/wwwroot/scss/_forms.scss */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* line 12, ../../Users/Jatin/Web/Portal/wwwroot/scss/_forms.scss */
+.form-text {
+    display: block;
+    margin-top: 0.25rem;
+}
+
+/* line 22, ../../Users/Jatin/Web/Portal/wwwroot/scss/_forms.scss */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+    /* line 28, ../../Users/Jatin/Web/Portal/wwwroot/scss/_forms.scss */
+    .form-row > .col,
+    .form-row > [class*="col-"] {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+/* line 10, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+.link-primary {
+    color: #005CA2;
+}
+    /* line 4, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+    .link-primary:hover, .link-primary:focus {
+        color: #00223c;
+    }
+
+/* line 14, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+.link-secondary {
+    color: #ED891E;
+}
+    /* line 4, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+    .link-secondary:hover, .link-secondary:focus {
+        color: #b0620e;
+    }
+
+/* line 18, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+.link-secondary-dark {
+    color: #D47B1C;
+}
+    /* line 4, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+    .link-secondary-dark:hover, .link-secondary-dark:focus {
+        color: #a76116;
+    }
+
+/* line 22, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+.link-tertiary, a {
+    color: #3373C3;
+}
+    /* line 4, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+    .link-tertiary:hover, a:hover, .link-tertiary:focus, a:focus {
+        color: #285b9b;
+    }
+
+/* line 26, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+.link-error {
+    color: #E02020;
+}
+    /* line 4, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+    .link-error:hover, .link-error:focus {
+        color: #871313;
+    }
+
+/* line 30, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+.link-text {
+    color: #212121;
+}
+    /* line 4, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+    .link-text:hover, .link-text:focus {
+        color: black;
+    }
+
+/* line 34, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+.link-label {
+    color: #757575;
+}
+    /* line 4, ../../Users/Jatin/Web/Portal/wwwroot/scss/_links.scss */
+    .link-label:hover, .link-label:focus {
+        color: #424242;
+    }
+
+/* line 3, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.w-25 {
+    width: 25% !important;
+}
+
+/* line 7, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.w-50 {
+    width: 50% !important;
+}
+
+/* line 11, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.w-75 {
+    width: 75% !important;
+}
+
+/* line 15, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.w-100 {
+    width: 100% !important;
+}
+
+/* line 19, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.w-auto {
+    width: auto !important;
+}
+
+/* line 23, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.h-25 {
+    height: 25% !important;
+}
+
+/* line 27, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.h-50 {
+    height: 50% !important;
+}
+
+/* line 31, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.h-75 {
+    height: 75% !important;
+}
+
+/* line 35, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.h-100 {
+    height: 100% !important;
+}
+
+/* line 39, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.h-auto {
+    height: auto !important;
+}
+
+/* line 43, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.mw-100 {
+    max-width: 100% !important;
+}
+
+/* line 47, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.mh-100 {
+    max-height: 100% !important;
+}
+
+/* line 51, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.min-vw-100 {
+    min-width: 100vw !important;
+}
+
+/* line 55, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.min-vh-100 {
+    min-height: 100vh !important;
+}
+
+/* line 59, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.vw-100 {
+    width: 100vw !important;
+}
+
+/* line 63, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_sizing.scss */
+.vh-100 {
+    height: 100vh !important;
+}
+
+/* line 3, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.m-0 {
+    margin: 0 !important;
+}
+
+/* line 7, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mt-0,
+.my-0 {
+    margin-top: 0 !important;
+}
+
+/* line 12, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mr-0,
+.mx-0 {
+    margin-right: 0 !important;
+}
+
+/* line 17, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mb-0,
+.my-0 {
+    margin-bottom: 0 !important;
+}
+
+/* line 22, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.ml-0,
+.mx-0 {
+    margin-left: 0 !important;
+}
+
+/* line 27, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.m-1 {
+    margin: 0.25rem !important;
+}
+
+/* line 31, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mt-1,
+.my-1 {
+    margin-top: 0.25rem !important;
+}
+
+/* line 36, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mr-1,
+.mx-1 {
+    margin-right: 0.25rem !important;
+}
+
+/* line 41, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mb-1,
+.my-1 {
+    margin-bottom: 0.25rem !important;
+}
+
+/* line 46, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.ml-1,
+.mx-1 {
+    margin-left: 0.25rem !important;
+}
+
+/* line 51, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.m-2 {
+    margin: 0.5rem !important;
+}
+
+/* line 55, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mt-2,
+.my-2 {
+    margin-top: 0.5rem !important;
+}
+
+/* line 60, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mr-2,
+.mx-2 {
+    margin-right: 0.5rem !important;
+}
+
+/* line 65, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mb-2,
+.my-2 {
+    margin-bottom: 0.5rem !important;
+}
+
+/* line 70, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.ml-2,
+.mx-2 {
+    margin-left: 0.5rem !important;
+}
+
+/* line 75, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.m-3 {
+    margin: 1rem !important;
+}
+
+/* line 79, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mt-3,
+.my-3 {
+    margin-top: 1rem !important;
+}
+
+/* line 84, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mr-3,
+.mx-3 {
+    margin-right: 1rem !important;
+}
+
+/* line 89, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mb-3,
+.my-3 {
+    margin-bottom: 1rem !important;
+}
+
+/* line 94, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.ml-3,
+.mx-3 {
+    margin-left: 1rem !important;
+}
+
+/* line 99, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.m-4 {
+    margin: 1.5rem !important;
+}
+
+/* line 103, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mt-4,
+.my-4 {
+    margin-top: 1.5rem !important;
+}
+
+/* line 108, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mr-4,
+.mx-4 {
+    margin-right: 1.5rem !important;
+}
+
+/* line 113, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mb-4,
+.my-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+/* line 118, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.ml-4,
+.mx-4 {
+    margin-left: 1.5rem !important;
+}
+
+/* line 123, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.m-5 {
+    margin: 3rem !important;
+}
+
+/* line 127, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mt-5,
+.my-5 {
+    margin-top: 3rem !important;
+}
+
+/* line 132, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mr-5,
+.mx-5 {
+    margin-right: 3rem !important;
+}
+
+/* line 137, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mb-5,
+.my-5 {
+    margin-bottom: 3rem !important;
+}
+
+/* line 142, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.ml-5,
+.mx-5 {
+    margin-left: 3rem !important;
+}
+
+/* line 147, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.p-0 {
+    padding: 0 !important;
+}
+
+/* line 151, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pt-0,
+.py-0 {
+    padding-top: 0 !important;
+}
+
+/* line 156, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pr-0,
+.px-0 {
+    padding-right: 0 !important;
+}
+
+/* line 161, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pb-0,
+.py-0 {
+    padding-bottom: 0 !important;
+}
+
+/* line 166, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pl-0,
+.px-0 {
+    padding-left: 0 !important;
+}
+
+/* line 171, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.p-1 {
+    padding: 0.25rem !important;
+}
+
+/* line 175, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pt-1,
+.py-1 {
+    padding-top: 0.25rem !important;
+}
+
+/* line 180, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pr-1,
+.px-1 {
+    padding-right: 0.25rem !important;
+}
+
+/* line 185, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pb-1,
+.py-1 {
+    padding-bottom: 0.25rem !important;
+}
+
+/* line 190, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pl-1,
+.px-1 {
+    padding-left: 0.25rem !important;
+}
+
+/* line 195, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.p-2 {
+    padding: 0.5rem !important;
+}
+
+/* line 199, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pt-2,
+.py-2 {
+    padding-top: 0.5rem !important;
+}
+
+/* line 204, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pr-2,
+.px-2 {
+    padding-right: 0.5rem !important;
+}
+
+/* line 209, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pb-2,
+.py-2 {
+    padding-bottom: 0.5rem !important;
+}
+
+/* line 214, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pl-2,
+.px-2 {
+    padding-left: 0.5rem !important;
+}
+
+/* line 219, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.p-3 {
+    padding: 1rem !important;
+}
+
+/* line 223, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pt-3,
+.py-3 {
+    padding-top: 1rem !important;
+}
+
+/* line 228, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pr-3,
+.px-3 {
+    padding-right: 1rem !important;
+}
+
+/* line 233, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pb-3,
+.py-3 {
+    padding-bottom: 1rem !important;
+}
+
+/* line 238, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pl-3,
+.px-3 {
+    padding-left: 1rem !important;
+}
+
+/* line 243, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+/* line 247, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pt-4,
+.py-4 {
+    padding-top: 1.5rem !important;
+}
+
+/* line 252, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pr-4,
+.px-4 {
+    padding-right: 1.5rem !important;
+}
+
+/* line 257, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pb-4,
+.py-4 {
+    padding-bottom: 1.5rem !important;
+}
+
+/* line 262, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pl-4,
+.px-4 {
+    padding-left: 1.5rem !important;
+}
+
+/* line 267, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.p-5 {
+    padding: 3rem !important;
+}
+
+/* line 271, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pt-5,
+.py-5 {
+    padding-top: 3rem !important;
+}
+
+/* line 276, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pr-5,
+.px-5 {
+    padding-right: 3rem !important;
+}
+
+/* line 281, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pb-5,
+.py-5 {
+    padding-bottom: 3rem !important;
+}
+
+/* line 286, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.pl-5,
+.px-5 {
+    padding-left: 3rem !important;
+}
+
+/* line 291, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.m-n1 {
+    margin: -0.25rem !important;
+}
+
+/* line 295, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mt-n1,
+.my-n1 {
+    margin-top: -0.25rem !important;
+}
+
+/* line 300, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mr-n1,
+.mx-n1 {
+    margin-right: -0.25rem !important;
+}
+
+/* line 305, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mb-n1,
+.my-n1 {
+    margin-bottom: -0.25rem !important;
+}
+
+/* line 310, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.ml-n1,
+.mx-n1 {
+    margin-left: -0.25rem !important;
+}
+
+/* line 315, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.m-n2 {
+    margin: -0.5rem !important;
+}
+
+/* line 319, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mt-n2,
+.my-n2 {
+    margin-top: -0.5rem !important;
+}
+
+/* line 324, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mr-n2,
+.mx-n2 {
+    margin-right: -0.5rem !important;
+}
+
+/* line 329, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mb-n2,
+.my-n2 {
+    margin-bottom: -0.5rem !important;
+}
+
+/* line 334, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.ml-n2,
+.mx-n2 {
+    margin-left: -0.5rem !important;
+}
+
+/* line 339, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.m-n3 {
+    margin: -1rem !important;
+}
+
+/* line 343, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mt-n3,
+.my-n3 {
+    margin-top: -1rem !important;
+}
+
+/* line 348, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mr-n3,
+.mx-n3 {
+    margin-right: -1rem !important;
+}
+
+/* line 353, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mb-n3,
+.my-n3 {
+    margin-bottom: -1rem !important;
+}
+
+/* line 358, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.ml-n3,
+.mx-n3 {
+    margin-left: -1rem !important;
+}
+
+/* line 363, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.m-n4 {
+    margin: -1.5rem !important;
+}
+
+/* line 367, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mt-n4,
+.my-n4 {
+    margin-top: -1.5rem !important;
+}
+
+/* line 372, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mr-n4,
+.mx-n4 {
+    margin-right: -1.5rem !important;
+}
+
+/* line 377, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mb-n4,
+.my-n4 {
+    margin-bottom: -1.5rem !important;
+}
+
+/* line 382, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.ml-n4,
+.mx-n4 {
+    margin-left: -1.5rem !important;
+}
+
+/* line 387, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.m-n5 {
+    margin: -3rem !important;
+}
+
+/* line 391, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mt-n5,
+.my-n5 {
+    margin-top: -3rem !important;
+}
+
+/* line 396, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mr-n5,
+.mx-n5 {
+    margin-right: -3rem !important;
+}
+
+/* line 401, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mb-n5,
+.my-n5 {
+    margin-bottom: -3rem !important;
+}
+
+/* line 406, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.ml-n5,
+.mx-n5 {
+    margin-left: -3rem !important;
+}
+
+/* line 411, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.m-auto {
+    margin: auto !important;
+}
+
+/* line 415, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mt-auto,
+.my-auto {
+    margin-top: auto !important;
+}
+
+/* line 420, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mr-auto,
+.mx-auto {
+    margin-right: auto !important;
+}
+
+/* line 425, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.mb-auto,
+.my-auto {
+    margin-bottom: auto !important;
+}
+
+/* line 430, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+.ml-auto,
+.mx-auto {
+    margin-left: auto !important;
+}
+
+@media (min-width: 576px) {
+    /* line 436, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-sm-0 {
+        margin: 0 !important;
+    }
+    /* line 439, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-sm-0,
+    .my-sm-0 {
+        margin-top: 0 !important;
+    }
+    /* line 443, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-sm-0,
+    .mx-sm-0 {
+        margin-right: 0 !important;
+    }
+    /* line 447, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-sm-0,
+    .my-sm-0 {
+        margin-bottom: 0 !important;
+    }
+    /* line 451, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-sm-0,
+    .mx-sm-0 {
+        margin-left: 0 !important;
+    }
+    /* line 455, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-sm-1 {
+        margin: 0.25rem !important;
+    }
+    /* line 458, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-sm-1,
+    .my-sm-1 {
+        margin-top: 0.25rem !important;
+    }
+    /* line 462, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-sm-1,
+    .mx-sm-1 {
+        margin-right: 0.25rem !important;
+    }
+    /* line 466, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-sm-1,
+    .my-sm-1 {
+        margin-bottom: 0.25rem !important;
+    }
+    /* line 470, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-sm-1,
+    .mx-sm-1 {
+        margin-left: 0.25rem !important;
+    }
+    /* line 474, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-sm-2 {
+        margin: 0.5rem !important;
+    }
+    /* line 477, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-sm-2,
+    .my-sm-2 {
+        margin-top: 0.5rem !important;
+    }
+    /* line 481, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-sm-2,
+    .mx-sm-2 {
+        margin-right: 0.5rem !important;
+    }
+    /* line 485, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-sm-2,
+    .my-sm-2 {
+        margin-bottom: 0.5rem !important;
+    }
+    /* line 489, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-sm-2,
+    .mx-sm-2 {
+        margin-left: 0.5rem !important;
+    }
+    /* line 493, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-sm-3 {
+        margin: 1rem !important;
+    }
+    /* line 496, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-sm-3,
+    .my-sm-3 {
+        margin-top: 1rem !important;
+    }
+    /* line 500, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-sm-3,
+    .mx-sm-3 {
+        margin-right: 1rem !important;
+    }
+    /* line 504, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-sm-3,
+    .my-sm-3 {
+        margin-bottom: 1rem !important;
+    }
+    /* line 508, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-sm-3,
+    .mx-sm-3 {
+        margin-left: 1rem !important;
+    }
+    /* line 512, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-sm-4 {
+        margin: 1.5rem !important;
+    }
+    /* line 515, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-sm-4,
+    .my-sm-4 {
+        margin-top: 1.5rem !important;
+    }
+    /* line 519, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-sm-4,
+    .mx-sm-4 {
+        margin-right: 1.5rem !important;
+    }
+    /* line 523, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-sm-4,
+    .my-sm-4 {
+        margin-bottom: 1.5rem !important;
+    }
+    /* line 527, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-sm-4,
+    .mx-sm-4 {
+        margin-left: 1.5rem !important;
+    }
+    /* line 531, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-sm-5 {
+        margin: 3rem !important;
+    }
+    /* line 534, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-sm-5,
+    .my-sm-5 {
+        margin-top: 3rem !important;
+    }
+    /* line 538, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-sm-5,
+    .mx-sm-5 {
+        margin-right: 3rem !important;
+    }
+    /* line 542, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-sm-5,
+    .my-sm-5 {
+        margin-bottom: 3rem !important;
+    }
+    /* line 546, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-sm-5,
+    .mx-sm-5 {
+        margin-left: 3rem !important;
+    }
+    /* line 550, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-sm-0 {
+        padding: 0 !important;
+    }
+    /* line 553, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-sm-0,
+    .py-sm-0 {
+        padding-top: 0 !important;
+    }
+    /* line 557, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-sm-0,
+    .px-sm-0 {
+        padding-right: 0 !important;
+    }
+    /* line 561, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-sm-0,
+    .py-sm-0 {
+        padding-bottom: 0 !important;
+    }
+    /* line 565, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-sm-0,
+    .px-sm-0 {
+        padding-left: 0 !important;
+    }
+    /* line 569, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-sm-1 {
+        padding: 0.25rem !important;
+    }
+    /* line 572, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-sm-1,
+    .py-sm-1 {
+        padding-top: 0.25rem !important;
+    }
+    /* line 576, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-sm-1,
+    .px-sm-1 {
+        padding-right: 0.25rem !important;
+    }
+    /* line 580, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-sm-1,
+    .py-sm-1 {
+        padding-bottom: 0.25rem !important;
+    }
+    /* line 584, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-sm-1,
+    .px-sm-1 {
+        padding-left: 0.25rem !important;
+    }
+    /* line 588, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-sm-2 {
+        padding: 0.5rem !important;
+    }
+    /* line 591, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-sm-2,
+    .py-sm-2 {
+        padding-top: 0.5rem !important;
+    }
+    /* line 595, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-sm-2,
+    .px-sm-2 {
+        padding-right: 0.5rem !important;
+    }
+    /* line 599, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-sm-2,
+    .py-sm-2 {
+        padding-bottom: 0.5rem !important;
+    }
+    /* line 603, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-sm-2,
+    .px-sm-2 {
+        padding-left: 0.5rem !important;
+    }
+    /* line 607, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-sm-3 {
+        padding: 1rem !important;
+    }
+    /* line 610, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-sm-3,
+    .py-sm-3 {
+        padding-top: 1rem !important;
+    }
+    /* line 614, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-sm-3,
+    .px-sm-3 {
+        padding-right: 1rem !important;
+    }
+    /* line 618, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-sm-3,
+    .py-sm-3 {
+        padding-bottom: 1rem !important;
+    }
+    /* line 622, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-sm-3,
+    .px-sm-3 {
+        padding-left: 1rem !important;
+    }
+    /* line 626, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-sm-4 {
+        padding: 1.5rem !important;
+    }
+    /* line 629, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-sm-4,
+    .py-sm-4 {
+        padding-top: 1.5rem !important;
+    }
+    /* line 633, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-sm-4,
+    .px-sm-4 {
+        padding-right: 1.5rem !important;
+    }
+    /* line 637, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-sm-4,
+    .py-sm-4 {
+        padding-bottom: 1.5rem !important;
+    }
+    /* line 641, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-sm-4,
+    .px-sm-4 {
+        padding-left: 1.5rem !important;
+    }
+    /* line 645, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-sm-5 {
+        padding: 3rem !important;
+    }
+    /* line 648, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-sm-5,
+    .py-sm-5 {
+        padding-top: 3rem !important;
+    }
+    /* line 652, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-sm-5,
+    .px-sm-5 {
+        padding-right: 3rem !important;
+    }
+    /* line 656, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-sm-5,
+    .py-sm-5 {
+        padding-bottom: 3rem !important;
+    }
+    /* line 660, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-sm-5,
+    .px-sm-5 {
+        padding-left: 3rem !important;
+    }
+    /* line 664, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-sm-n1 {
+        margin: -0.25rem !important;
+    }
+    /* line 667, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-sm-n1,
+    .my-sm-n1 {
+        margin-top: -0.25rem !important;
+    }
+    /* line 671, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-sm-n1,
+    .mx-sm-n1 {
+        margin-right: -0.25rem !important;
+    }
+    /* line 675, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-sm-n1,
+    .my-sm-n1 {
+        margin-bottom: -0.25rem !important;
+    }
+    /* line 679, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-sm-n1,
+    .mx-sm-n1 {
+        margin-left: -0.25rem !important;
+    }
+    /* line 683, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-sm-n2 {
+        margin: -0.5rem !important;
+    }
+    /* line 686, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-sm-n2,
+    .my-sm-n2 {
+        margin-top: -0.5rem !important;
+    }
+    /* line 690, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-sm-n2,
+    .mx-sm-n2 {
+        margin-right: -0.5rem !important;
+    }
+    /* line 694, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-sm-n2,
+    .my-sm-n2 {
+        margin-bottom: -0.5rem !important;
+    }
+    /* line 698, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-sm-n2,
+    .mx-sm-n2 {
+        margin-left: -0.5rem !important;
+    }
+    /* line 702, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-sm-n3 {
+        margin: -1rem !important;
+    }
+    /* line 705, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-sm-n3,
+    .my-sm-n3 {
+        margin-top: -1rem !important;
+    }
+    /* line 709, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-sm-n3,
+    .mx-sm-n3 {
+        margin-right: -1rem !important;
+    }
+    /* line 713, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-sm-n3,
+    .my-sm-n3 {
+        margin-bottom: -1rem !important;
+    }
+    /* line 717, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-sm-n3,
+    .mx-sm-n3 {
+        margin-left: -1rem !important;
+    }
+    /* line 721, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-sm-n4 {
+        margin: -1.5rem !important;
+    }
+    /* line 724, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-sm-n4,
+    .my-sm-n4 {
+        margin-top: -1.5rem !important;
+    }
+    /* line 728, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-sm-n4,
+    .mx-sm-n4 {
+        margin-right: -1.5rem !important;
+    }
+    /* line 732, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-sm-n4,
+    .my-sm-n4 {
+        margin-bottom: -1.5rem !important;
+    }
+    /* line 736, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-sm-n4,
+    .mx-sm-n4 {
+        margin-left: -1.5rem !important;
+    }
+    /* line 740, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-sm-n5 {
+        margin: -3rem !important;
+    }
+    /* line 743, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-sm-n5,
+    .my-sm-n5 {
+        margin-top: -3rem !important;
+    }
+    /* line 747, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-sm-n5,
+    .mx-sm-n5 {
+        margin-right: -3rem !important;
+    }
+    /* line 751, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-sm-n5,
+    .my-sm-n5 {
+        margin-bottom: -3rem !important;
+    }
+    /* line 755, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-sm-n5,
+    .mx-sm-n5 {
+        margin-left: -3rem !important;
+    }
+    /* line 759, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-sm-auto {
+        margin: auto !important;
+    }
+    /* line 762, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-sm-auto,
+    .my-sm-auto {
+        margin-top: auto !important;
+    }
+    /* line 766, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-sm-auto,
+    .mx-sm-auto {
+        margin-right: auto !important;
+    }
+    /* line 770, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-sm-auto,
+    .my-sm-auto {
+        margin-bottom: auto !important;
+    }
+    /* line 774, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-sm-auto,
+    .mx-sm-auto {
+        margin-left: auto !important;
+    }
+}
+
+@media (min-width: 768px) {
+    /* line 781, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-md-0 {
+        margin: 0 !important;
+    }
+    /* line 784, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-md-0,
+    .my-md-0 {
+        margin-top: 0 !important;
+    }
+    /* line 788, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-md-0,
+    .mx-md-0 {
+        margin-right: 0 !important;
+    }
+    /* line 792, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-md-0,
+    .my-md-0 {
+        margin-bottom: 0 !important;
+    }
+    /* line 796, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-md-0,
+    .mx-md-0 {
+        margin-left: 0 !important;
+    }
+    /* line 800, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-md-1 {
+        margin: 0.25rem !important;
+    }
+    /* line 803, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-md-1,
+    .my-md-1 {
+        margin-top: 0.25rem !important;
+    }
+    /* line 807, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-md-1,
+    .mx-md-1 {
+        margin-right: 0.25rem !important;
+    }
+    /* line 811, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-md-1,
+    .my-md-1 {
+        margin-bottom: 0.25rem !important;
+    }
+    /* line 815, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-md-1,
+    .mx-md-1 {
+        margin-left: 0.25rem !important;
+    }
+    /* line 819, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-md-2 {
+        margin: 0.5rem !important;
+    }
+    /* line 822, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-md-2,
+    .my-md-2 {
+        margin-top: 0.5rem !important;
+    }
+    /* line 826, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-md-2,
+    .mx-md-2 {
+        margin-right: 0.5rem !important;
+    }
+    /* line 830, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-md-2,
+    .my-md-2 {
+        margin-bottom: 0.5rem !important;
+    }
+    /* line 834, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-md-2,
+    .mx-md-2 {
+        margin-left: 0.5rem !important;
+    }
+    /* line 838, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-md-3 {
+        margin: 1rem !important;
+    }
+    /* line 841, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-md-3,
+    .my-md-3 {
+        margin-top: 1rem !important;
+    }
+    /* line 845, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-md-3,
+    .mx-md-3 {
+        margin-right: 1rem !important;
+    }
+    /* line 849, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-md-3,
+    .my-md-3 {
+        margin-bottom: 1rem !important;
+    }
+    /* line 853, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-md-3,
+    .mx-md-3 {
+        margin-left: 1rem !important;
+    }
+    /* line 857, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-md-4 {
+        margin: 1.5rem !important;
+    }
+    /* line 860, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-md-4,
+    .my-md-4 {
+        margin-top: 1.5rem !important;
+    }
+    /* line 864, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-md-4,
+    .mx-md-4 {
+        margin-right: 1.5rem !important;
+    }
+    /* line 868, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-md-4,
+    .my-md-4 {
+        margin-bottom: 1.5rem !important;
+    }
+    /* line 872, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-md-4,
+    .mx-md-4 {
+        margin-left: 1.5rem !important;
+    }
+    /* line 876, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-md-5 {
+        margin: 3rem !important;
+    }
+    /* line 879, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-md-5,
+    .my-md-5 {
+        margin-top: 3rem !important;
+    }
+    /* line 883, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-md-5,
+    .mx-md-5 {
+        margin-right: 3rem !important;
+    }
+    /* line 887, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-md-5,
+    .my-md-5 {
+        margin-bottom: 3rem !important;
+    }
+    /* line 891, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-md-5,
+    .mx-md-5 {
+        margin-left: 3rem !important;
+    }
+    /* line 895, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-md-0 {
+        padding: 0 !important;
+    }
+    /* line 898, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-md-0,
+    .py-md-0 {
+        padding-top: 0 !important;
+    }
+    /* line 902, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-md-0,
+    .px-md-0 {
+        padding-right: 0 !important;
+    }
+    /* line 906, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-md-0,
+    .py-md-0 {
+        padding-bottom: 0 !important;
+    }
+    /* line 910, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-md-0,
+    .px-md-0 {
+        padding-left: 0 !important;
+    }
+    /* line 914, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-md-1 {
+        padding: 0.25rem !important;
+    }
+    /* line 917, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-md-1,
+    .py-md-1 {
+        padding-top: 0.25rem !important;
+    }
+    /* line 921, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-md-1,
+    .px-md-1 {
+        padding-right: 0.25rem !important;
+    }
+    /* line 925, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-md-1,
+    .py-md-1 {
+        padding-bottom: 0.25rem !important;
+    }
+    /* line 929, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-md-1,
+    .px-md-1 {
+        padding-left: 0.25rem !important;
+    }
+    /* line 933, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-md-2 {
+        padding: 0.5rem !important;
+    }
+    /* line 936, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-md-2,
+    .py-md-2 {
+        padding-top: 0.5rem !important;
+    }
+    /* line 940, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-md-2,
+    .px-md-2 {
+        padding-right: 0.5rem !important;
+    }
+    /* line 944, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-md-2,
+    .py-md-2 {
+        padding-bottom: 0.5rem !important;
+    }
+    /* line 948, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-md-2,
+    .px-md-2 {
+        padding-left: 0.5rem !important;
+    }
+    /* line 952, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-md-3 {
+        padding: 1rem !important;
+    }
+    /* line 955, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-md-3,
+    .py-md-3 {
+        padding-top: 1rem !important;
+    }
+    /* line 959, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-md-3,
+    .px-md-3 {
+        padding-right: 1rem !important;
+    }
+    /* line 963, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-md-3,
+    .py-md-3 {
+        padding-bottom: 1rem !important;
+    }
+    /* line 967, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-md-3,
+    .px-md-3 {
+        padding-left: 1rem !important;
+    }
+    /* line 971, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-md-4 {
+        padding: 1.5rem !important;
+    }
+    /* line 974, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-md-4,
+    .py-md-4 {
+        padding-top: 1.5rem !important;
+    }
+    /* line 978, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-md-4,
+    .px-md-4 {
+        padding-right: 1.5rem !important;
+    }
+    /* line 982, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-md-4,
+    .py-md-4 {
+        padding-bottom: 1.5rem !important;
+    }
+    /* line 986, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-md-4,
+    .px-md-4 {
+        padding-left: 1.5rem !important;
+    }
+    /* line 990, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-md-5 {
+        padding: 3rem !important;
+    }
+    /* line 993, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-md-5,
+    .py-md-5 {
+        padding-top: 3rem !important;
+    }
+    /* line 997, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-md-5,
+    .px-md-5 {
+        padding-right: 3rem !important;
+    }
+    /* line 1001, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-md-5,
+    .py-md-5 {
+        padding-bottom: 3rem !important;
+    }
+    /* line 1005, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-md-5,
+    .px-md-5 {
+        padding-left: 3rem !important;
+    }
+    /* line 1009, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-md-n1 {
+        margin: -0.25rem !important;
+    }
+    /* line 1012, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-md-n1,
+    .my-md-n1 {
+        margin-top: -0.25rem !important;
+    }
+    /* line 1016, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-md-n1,
+    .mx-md-n1 {
+        margin-right: -0.25rem !important;
+    }
+    /* line 1020, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-md-n1,
+    .my-md-n1 {
+        margin-bottom: -0.25rem !important;
+    }
+    /* line 1024, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-md-n1,
+    .mx-md-n1 {
+        margin-left: -0.25rem !important;
+    }
+    /* line 1028, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-md-n2 {
+        margin: -0.5rem !important;
+    }
+    /* line 1031, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-md-n2,
+    .my-md-n2 {
+        margin-top: -0.5rem !important;
+    }
+    /* line 1035, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-md-n2,
+    .mx-md-n2 {
+        margin-right: -0.5rem !important;
+    }
+    /* line 1039, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-md-n2,
+    .my-md-n2 {
+        margin-bottom: -0.5rem !important;
+    }
+    /* line 1043, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-md-n2,
+    .mx-md-n2 {
+        margin-left: -0.5rem !important;
+    }
+    /* line 1047, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-md-n3 {
+        margin: -1rem !important;
+    }
+    /* line 1050, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-md-n3,
+    .my-md-n3 {
+        margin-top: -1rem !important;
+    }
+    /* line 1054, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-md-n3,
+    .mx-md-n3 {
+        margin-right: -1rem !important;
+    }
+    /* line 1058, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-md-n3,
+    .my-md-n3 {
+        margin-bottom: -1rem !important;
+    }
+    /* line 1062, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-md-n3,
+    .mx-md-n3 {
+        margin-left: -1rem !important;
+    }
+    /* line 1066, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-md-n4 {
+        margin: -1.5rem !important;
+    }
+    /* line 1069, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-md-n4,
+    .my-md-n4 {
+        margin-top: -1.5rem !important;
+    }
+    /* line 1073, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-md-n4,
+    .mx-md-n4 {
+        margin-right: -1.5rem !important;
+    }
+    /* line 1077, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-md-n4,
+    .my-md-n4 {
+        margin-bottom: -1.5rem !important;
+    }
+    /* line 1081, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-md-n4,
+    .mx-md-n4 {
+        margin-left: -1.5rem !important;
+    }
+    /* line 1085, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-md-n5 {
+        margin: -3rem !important;
+    }
+    /* line 1088, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-md-n5,
+    .my-md-n5 {
+        margin-top: -3rem !important;
+    }
+    /* line 1092, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-md-n5,
+    .mx-md-n5 {
+        margin-right: -3rem !important;
+    }
+    /* line 1096, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-md-n5,
+    .my-md-n5 {
+        margin-bottom: -3rem !important;
+    }
+    /* line 1100, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-md-n5,
+    .mx-md-n5 {
+        margin-left: -3rem !important;
+    }
+    /* line 1104, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-md-auto {
+        margin: auto !important;
+    }
+    /* line 1107, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-md-auto,
+    .my-md-auto {
+        margin-top: auto !important;
+    }
+    /* line 1111, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-md-auto,
+    .mx-md-auto {
+        margin-right: auto !important;
+    }
+    /* line 1115, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-md-auto,
+    .my-md-auto {
+        margin-bottom: auto !important;
+    }
+    /* line 1119, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-md-auto,
+    .mx-md-auto {
+        margin-left: auto !important;
+    }
+}
+
+@media (min-width: 992px) {
+    /* line 1126, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-lg-0 {
+        margin: 0 !important;
+    }
+    /* line 1129, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-lg-0,
+    .my-lg-0 {
+        margin-top: 0 !important;
+    }
+    /* line 1133, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-lg-0,
+    .mx-lg-0 {
+        margin-right: 0 !important;
+    }
+    /* line 1137, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-lg-0,
+    .my-lg-0 {
+        margin-bottom: 0 !important;
+    }
+    /* line 1141, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-lg-0,
+    .mx-lg-0 {
+        margin-left: 0 !important;
+    }
+    /* line 1145, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-lg-1 {
+        margin: 0.25rem !important;
+    }
+    /* line 1148, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-lg-1,
+    .my-lg-1 {
+        margin-top: 0.25rem !important;
+    }
+    /* line 1152, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-lg-1,
+    .mx-lg-1 {
+        margin-right: 0.25rem !important;
+    }
+    /* line 1156, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-lg-1,
+    .my-lg-1 {
+        margin-bottom: 0.25rem !important;
+    }
+    /* line 1160, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-lg-1,
+    .mx-lg-1 {
+        margin-left: 0.25rem !important;
+    }
+    /* line 1164, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-lg-2 {
+        margin: 0.5rem !important;
+    }
+    /* line 1167, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-lg-2,
+    .my-lg-2 {
+        margin-top: 0.5rem !important;
+    }
+    /* line 1171, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-lg-2,
+    .mx-lg-2 {
+        margin-right: 0.5rem !important;
+    }
+    /* line 1175, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-lg-2,
+    .my-lg-2 {
+        margin-bottom: 0.5rem !important;
+    }
+    /* line 1179, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-lg-2,
+    .mx-lg-2 {
+        margin-left: 0.5rem !important;
+    }
+    /* line 1183, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-lg-3 {
+        margin: 1rem !important;
+    }
+    /* line 1186, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-lg-3,
+    .my-lg-3 {
+        margin-top: 1rem !important;
+    }
+    /* line 1190, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-lg-3,
+    .mx-lg-3 {
+        margin-right: 1rem !important;
+    }
+    /* line 1194, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-lg-3,
+    .my-lg-3 {
+        margin-bottom: 1rem !important;
+    }
+    /* line 1198, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-lg-3,
+    .mx-lg-3 {
+        margin-left: 1rem !important;
+    }
+    /* line 1202, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-lg-4 {
+        margin: 1.5rem !important;
+    }
+    /* line 1205, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-lg-4,
+    .my-lg-4 {
+        margin-top: 1.5rem !important;
+    }
+    /* line 1209, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-lg-4,
+    .mx-lg-4 {
+        margin-right: 1.5rem !important;
+    }
+    /* line 1213, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-lg-4,
+    .my-lg-4 {
+        margin-bottom: 1.5rem !important;
+    }
+    /* line 1217, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-lg-4,
+    .mx-lg-4 {
+        margin-left: 1.5rem !important;
+    }
+    /* line 1221, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-lg-5 {
+        margin: 3rem !important;
+    }
+    /* line 1224, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-lg-5,
+    .my-lg-5 {
+        margin-top: 3rem !important;
+    }
+    /* line 1228, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-lg-5,
+    .mx-lg-5 {
+        margin-right: 3rem !important;
+    }
+    /* line 1232, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-lg-5,
+    .my-lg-5 {
+        margin-bottom: 3rem !important;
+    }
+    /* line 1236, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-lg-5,
+    .mx-lg-5 {
+        margin-left: 3rem !important;
+    }
+    /* line 1240, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-lg-0 {
+        padding: 0 !important;
+    }
+    /* line 1243, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-lg-0,
+    .py-lg-0 {
+        padding-top: 0 !important;
+    }
+    /* line 1247, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-lg-0,
+    .px-lg-0 {
+        padding-right: 0 !important;
+    }
+    /* line 1251, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-lg-0,
+    .py-lg-0 {
+        padding-bottom: 0 !important;
+    }
+    /* line 1255, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-lg-0,
+    .px-lg-0 {
+        padding-left: 0 !important;
+    }
+    /* line 1259, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-lg-1 {
+        padding: 0.25rem !important;
+    }
+    /* line 1262, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-lg-1,
+    .py-lg-1 {
+        padding-top: 0.25rem !important;
+    }
+    /* line 1266, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-lg-1,
+    .px-lg-1 {
+        padding-right: 0.25rem !important;
+    }
+    /* line 1270, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-lg-1,
+    .py-lg-1 {
+        padding-bottom: 0.25rem !important;
+    }
+    /* line 1274, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-lg-1,
+    .px-lg-1 {
+        padding-left: 0.25rem !important;
+    }
+    /* line 1278, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-lg-2 {
+        padding: 0.5rem !important;
+    }
+    /* line 1281, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-lg-2,
+    .py-lg-2 {
+        padding-top: 0.5rem !important;
+    }
+    /* line 1285, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-lg-2,
+    .px-lg-2 {
+        padding-right: 0.5rem !important;
+    }
+    /* line 1289, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-lg-2,
+    .py-lg-2 {
+        padding-bottom: 0.5rem !important;
+    }
+    /* line 1293, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-lg-2,
+    .px-lg-2 {
+        padding-left: 0.5rem !important;
+    }
+    /* line 1297, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-lg-3 {
+        padding: 1rem !important;
+    }
+    /* line 1300, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-lg-3,
+    .py-lg-3 {
+        padding-top: 1rem !important;
+    }
+    /* line 1304, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-lg-3,
+    .px-lg-3 {
+        padding-right: 1rem !important;
+    }
+    /* line 1308, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-lg-3,
+    .py-lg-3 {
+        padding-bottom: 1rem !important;
+    }
+    /* line 1312, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-lg-3,
+    .px-lg-3 {
+        padding-left: 1rem !important;
+    }
+    /* line 1316, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-lg-4 {
+        padding: 1.5rem !important;
+    }
+    /* line 1319, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-lg-4,
+    .py-lg-4 {
+        padding-top: 1.5rem !important;
+    }
+    /* line 1323, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-lg-4,
+    .px-lg-4 {
+        padding-right: 1.5rem !important;
+    }
+    /* line 1327, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-lg-4,
+    .py-lg-4 {
+        padding-bottom: 1.5rem !important;
+    }
+    /* line 1331, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-lg-4,
+    .px-lg-4 {
+        padding-left: 1.5rem !important;
+    }
+    /* line 1335, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-lg-5 {
+        padding: 3rem !important;
+    }
+    /* line 1338, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-lg-5,
+    .py-lg-5 {
+        padding-top: 3rem !important;
+    }
+    /* line 1342, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-lg-5,
+    .px-lg-5 {
+        padding-right: 3rem !important;
+    }
+    /* line 1346, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-lg-5,
+    .py-lg-5 {
+        padding-bottom: 3rem !important;
+    }
+    /* line 1350, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-lg-5,
+    .px-lg-5 {
+        padding-left: 3rem !important;
+    }
+    /* line 1354, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-lg-n1 {
+        margin: -0.25rem !important;
+    }
+    /* line 1357, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-lg-n1,
+    .my-lg-n1 {
+        margin-top: -0.25rem !important;
+    }
+    /* line 1361, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-lg-n1,
+    .mx-lg-n1 {
+        margin-right: -0.25rem !important;
+    }
+    /* line 1365, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-lg-n1,
+    .my-lg-n1 {
+        margin-bottom: -0.25rem !important;
+    }
+    /* line 1369, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-lg-n1,
+    .mx-lg-n1 {
+        margin-left: -0.25rem !important;
+    }
+    /* line 1373, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-lg-n2 {
+        margin: -0.5rem !important;
+    }
+    /* line 1376, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-lg-n2,
+    .my-lg-n2 {
+        margin-top: -0.5rem !important;
+    }
+    /* line 1380, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-lg-n2,
+    .mx-lg-n2 {
+        margin-right: -0.5rem !important;
+    }
+    /* line 1384, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-lg-n2,
+    .my-lg-n2 {
+        margin-bottom: -0.5rem !important;
+    }
+    /* line 1388, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-lg-n2,
+    .mx-lg-n2 {
+        margin-left: -0.5rem !important;
+    }
+    /* line 1392, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-lg-n3 {
+        margin: -1rem !important;
+    }
+    /* line 1395, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-lg-n3,
+    .my-lg-n3 {
+        margin-top: -1rem !important;
+    }
+    /* line 1399, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-lg-n3,
+    .mx-lg-n3 {
+        margin-right: -1rem !important;
+    }
+    /* line 1403, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-lg-n3,
+    .my-lg-n3 {
+        margin-bottom: -1rem !important;
+    }
+    /* line 1407, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-lg-n3,
+    .mx-lg-n3 {
+        margin-left: -1rem !important;
+    }
+    /* line 1411, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-lg-n4 {
+        margin: -1.5rem !important;
+    }
+    /* line 1414, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-lg-n4,
+    .my-lg-n4 {
+        margin-top: -1.5rem !important;
+    }
+    /* line 1418, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-lg-n4,
+    .mx-lg-n4 {
+        margin-right: -1.5rem !important;
+    }
+    /* line 1422, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-lg-n4,
+    .my-lg-n4 {
+        margin-bottom: -1.5rem !important;
+    }
+    /* line 1426, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-lg-n4,
+    .mx-lg-n4 {
+        margin-left: -1.5rem !important;
+    }
+    /* line 1430, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-lg-n5 {
+        margin: -3rem !important;
+    }
+    /* line 1433, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-lg-n5,
+    .my-lg-n5 {
+        margin-top: -3rem !important;
+    }
+    /* line 1437, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-lg-n5,
+    .mx-lg-n5 {
+        margin-right: -3rem !important;
+    }
+    /* line 1441, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-lg-n5,
+    .my-lg-n5 {
+        margin-bottom: -3rem !important;
+    }
+    /* line 1445, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-lg-n5,
+    .mx-lg-n5 {
+        margin-left: -3rem !important;
+    }
+    /* line 1449, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-lg-auto {
+        margin: auto !important;
+    }
+    /* line 1452, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-lg-auto,
+    .my-lg-auto {
+        margin-top: auto !important;
+    }
+    /* line 1456, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-lg-auto,
+    .mx-lg-auto {
+        margin-right: auto !important;
+    }
+    /* line 1460, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-lg-auto,
+    .my-lg-auto {
+        margin-bottom: auto !important;
+    }
+    /* line 1464, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-lg-auto,
+    .mx-lg-auto {
+        margin-left: auto !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* line 1471, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-xl-0 {
+        margin: 0 !important;
+    }
+    /* line 1474, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-xl-0,
+    .my-xl-0 {
+        margin-top: 0 !important;
+    }
+    /* line 1478, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-xl-0,
+    .mx-xl-0 {
+        margin-right: 0 !important;
+    }
+    /* line 1482, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-xl-0,
+    .my-xl-0 {
+        margin-bottom: 0 !important;
+    }
+    /* line 1486, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-xl-0,
+    .mx-xl-0 {
+        margin-left: 0 !important;
+    }
+    /* line 1490, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-xl-1 {
+        margin: 0.25rem !important;
+    }
+    /* line 1493, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-xl-1,
+    .my-xl-1 {
+        margin-top: 0.25rem !important;
+    }
+    /* line 1497, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-xl-1,
+    .mx-xl-1 {
+        margin-right: 0.25rem !important;
+    }
+    /* line 1501, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-xl-1,
+    .my-xl-1 {
+        margin-bottom: 0.25rem !important;
+    }
+    /* line 1505, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-xl-1,
+    .mx-xl-1 {
+        margin-left: 0.25rem !important;
+    }
+    /* line 1509, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-xl-2 {
+        margin: 0.5rem !important;
+    }
+    /* line 1512, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-xl-2,
+    .my-xl-2 {
+        margin-top: 0.5rem !important;
+    }
+    /* line 1516, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-xl-2,
+    .mx-xl-2 {
+        margin-right: 0.5rem !important;
+    }
+    /* line 1520, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-xl-2,
+    .my-xl-2 {
+        margin-bottom: 0.5rem !important;
+    }
+    /* line 1524, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-xl-2,
+    .mx-xl-2 {
+        margin-left: 0.5rem !important;
+    }
+    /* line 1528, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-xl-3 {
+        margin: 1rem !important;
+    }
+    /* line 1531, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-xl-3,
+    .my-xl-3 {
+        margin-top: 1rem !important;
+    }
+    /* line 1535, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-xl-3,
+    .mx-xl-3 {
+        margin-right: 1rem !important;
+    }
+    /* line 1539, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-xl-3,
+    .my-xl-3 {
+        margin-bottom: 1rem !important;
+    }
+    /* line 1543, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-xl-3,
+    .mx-xl-3 {
+        margin-left: 1rem !important;
+    }
+    /* line 1547, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-xl-4 {
+        margin: 1.5rem !important;
+    }
+    /* line 1550, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-xl-4,
+    .my-xl-4 {
+        margin-top: 1.5rem !important;
+    }
+    /* line 1554, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-xl-4,
+    .mx-xl-4 {
+        margin-right: 1.5rem !important;
+    }
+    /* line 1558, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-xl-4,
+    .my-xl-4 {
+        margin-bottom: 1.5rem !important;
+    }
+    /* line 1562, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-xl-4,
+    .mx-xl-4 {
+        margin-left: 1.5rem !important;
+    }
+    /* line 1566, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-xl-5 {
+        margin: 3rem !important;
+    }
+    /* line 1569, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-xl-5,
+    .my-xl-5 {
+        margin-top: 3rem !important;
+    }
+    /* line 1573, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-xl-5,
+    .mx-xl-5 {
+        margin-right: 3rem !important;
+    }
+    /* line 1577, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-xl-5,
+    .my-xl-5 {
+        margin-bottom: 3rem !important;
+    }
+    /* line 1581, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-xl-5,
+    .mx-xl-5 {
+        margin-left: 3rem !important;
+    }
+    /* line 1585, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-xl-0 {
+        padding: 0 !important;
+    }
+    /* line 1588, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-xl-0,
+    .py-xl-0 {
+        padding-top: 0 !important;
+    }
+    /* line 1592, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-xl-0,
+    .px-xl-0 {
+        padding-right: 0 !important;
+    }
+    /* line 1596, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-xl-0,
+    .py-xl-0 {
+        padding-bottom: 0 !important;
+    }
+    /* line 1600, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-xl-0,
+    .px-xl-0 {
+        padding-left: 0 !important;
+    }
+    /* line 1604, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-xl-1 {
+        padding: 0.25rem !important;
+    }
+    /* line 1607, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-xl-1,
+    .py-xl-1 {
+        padding-top: 0.25rem !important;
+    }
+    /* line 1611, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-xl-1,
+    .px-xl-1 {
+        padding-right: 0.25rem !important;
+    }
+    /* line 1615, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-xl-1,
+    .py-xl-1 {
+        padding-bottom: 0.25rem !important;
+    }
+    /* line 1619, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-xl-1,
+    .px-xl-1 {
+        padding-left: 0.25rem !important;
+    }
+    /* line 1623, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-xl-2 {
+        padding: 0.5rem !important;
+    }
+    /* line 1626, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-xl-2,
+    .py-xl-2 {
+        padding-top: 0.5rem !important;
+    }
+    /* line 1630, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-xl-2,
+    .px-xl-2 {
+        padding-right: 0.5rem !important;
+    }
+    /* line 1634, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-xl-2,
+    .py-xl-2 {
+        padding-bottom: 0.5rem !important;
+    }
+    /* line 1638, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-xl-2,
+    .px-xl-2 {
+        padding-left: 0.5rem !important;
+    }
+    /* line 1642, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-xl-3 {
+        padding: 1rem !important;
+    }
+    /* line 1645, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-xl-3,
+    .py-xl-3 {
+        padding-top: 1rem !important;
+    }
+    /* line 1649, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-xl-3,
+    .px-xl-3 {
+        padding-right: 1rem !important;
+    }
+    /* line 1653, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-xl-3,
+    .py-xl-3 {
+        padding-bottom: 1rem !important;
+    }
+    /* line 1657, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-xl-3,
+    .px-xl-3 {
+        padding-left: 1rem !important;
+    }
+    /* line 1661, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-xl-4 {
+        padding: 1.5rem !important;
+    }
+    /* line 1664, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-xl-4,
+    .py-xl-4 {
+        padding-top: 1.5rem !important;
+    }
+    /* line 1668, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-xl-4,
+    .px-xl-4 {
+        padding-right: 1.5rem !important;
+    }
+    /* line 1672, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-xl-4,
+    .py-xl-4 {
+        padding-bottom: 1.5rem !important;
+    }
+    /* line 1676, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-xl-4,
+    .px-xl-4 {
+        padding-left: 1.5rem !important;
+    }
+    /* line 1680, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .p-xl-5 {
+        padding: 3rem !important;
+    }
+    /* line 1683, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pt-xl-5,
+    .py-xl-5 {
+        padding-top: 3rem !important;
+    }
+    /* line 1687, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pr-xl-5,
+    .px-xl-5 {
+        padding-right: 3rem !important;
+    }
+    /* line 1691, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pb-xl-5,
+    .py-xl-5 {
+        padding-bottom: 3rem !important;
+    }
+    /* line 1695, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .pl-xl-5,
+    .px-xl-5 {
+        padding-left: 3rem !important;
+    }
+    /* line 1699, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-xl-n1 {
+        margin: -0.25rem !important;
+    }
+    /* line 1702, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-xl-n1,
+    .my-xl-n1 {
+        margin-top: -0.25rem !important;
+    }
+    /* line 1706, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-xl-n1,
+    .mx-xl-n1 {
+        margin-right: -0.25rem !important;
+    }
+    /* line 1710, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-xl-n1,
+    .my-xl-n1 {
+        margin-bottom: -0.25rem !important;
+    }
+    /* line 1714, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-xl-n1,
+    .mx-xl-n1 {
+        margin-left: -0.25rem !important;
+    }
+    /* line 1718, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-xl-n2 {
+        margin: -0.5rem !important;
+    }
+    /* line 1721, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-xl-n2,
+    .my-xl-n2 {
+        margin-top: -0.5rem !important;
+    }
+    /* line 1725, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-xl-n2,
+    .mx-xl-n2 {
+        margin-right: -0.5rem !important;
+    }
+    /* line 1729, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-xl-n2,
+    .my-xl-n2 {
+        margin-bottom: -0.5rem !important;
+    }
+    /* line 1733, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-xl-n2,
+    .mx-xl-n2 {
+        margin-left: -0.5rem !important;
+    }
+    /* line 1737, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-xl-n3 {
+        margin: -1rem !important;
+    }
+    /* line 1740, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-xl-n3,
+    .my-xl-n3 {
+        margin-top: -1rem !important;
+    }
+    /* line 1744, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-xl-n3,
+    .mx-xl-n3 {
+        margin-right: -1rem !important;
+    }
+    /* line 1748, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-xl-n3,
+    .my-xl-n3 {
+        margin-bottom: -1rem !important;
+    }
+    /* line 1752, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-xl-n3,
+    .mx-xl-n3 {
+        margin-left: -1rem !important;
+    }
+    /* line 1756, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-xl-n4 {
+        margin: -1.5rem !important;
+    }
+    /* line 1759, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-xl-n4,
+    .my-xl-n4 {
+        margin-top: -1.5rem !important;
+    }
+    /* line 1763, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-xl-n4,
+    .mx-xl-n4 {
+        margin-right: -1.5rem !important;
+    }
+    /* line 1767, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-xl-n4,
+    .my-xl-n4 {
+        margin-bottom: -1.5rem !important;
+    }
+    /* line 1771, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-xl-n4,
+    .mx-xl-n4 {
+        margin-left: -1.5rem !important;
+    }
+    /* line 1775, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-xl-n5 {
+        margin: -3rem !important;
+    }
+    /* line 1778, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-xl-n5,
+    .my-xl-n5 {
+        margin-top: -3rem !important;
+    }
+    /* line 1782, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-xl-n5,
+    .mx-xl-n5 {
+        margin-right: -3rem !important;
+    }
+    /* line 1786, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-xl-n5,
+    .my-xl-n5 {
+        margin-bottom: -3rem !important;
+    }
+    /* line 1790, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-xl-n5,
+    .mx-xl-n5 {
+        margin-left: -3rem !important;
+    }
+    /* line 1794, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .m-xl-auto {
+        margin: auto !important;
+    }
+    /* line 1797, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mt-xl-auto,
+    .my-xl-auto {
+        margin-top: auto !important;
+    }
+    /* line 1801, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mr-xl-auto,
+    .mx-xl-auto {
+        margin-right: auto !important;
+    }
+    /* line 1805, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .mb-xl-auto,
+    .my-xl-auto {
+        margin-bottom: auto !important;
+    }
+    /* line 1809, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_spacing.scss */
+    .ml-xl-auto,
+    .mx-xl-auto {
+        margin-left: auto !important;
+    }
+}
+
+/* line 3, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-monospace {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
+/* line 7, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-justify {
+    text-align: justify !important;
+}
+
+/* line 11, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-wrap {
+    white-space: normal !important;
+}
+
+/* line 15, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-nowrap {
+    white-space: nowrap !important;
+}
+
+/* line 19, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* line 25, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-left {
+    text-align: left !important;
+}
+
+/* line 29, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-right {
+    text-align: right !important;
+}
+
+/* line 33, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-center {
+    text-align: center !important;
+}
+
+@media (min-width: 576px) {
+    /* line 38, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+    .text-sm-left {
+        text-align: left !important;
+    }
+    /* line 41, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+    .text-sm-right {
+        text-align: right !important;
+    }
+    /* line 44, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+    .text-sm-center {
+        text-align: center !important;
+    }
+}
+
+@media (min-width: 768px) {
+    /* line 50, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+    .text-md-left {
+        text-align: left !important;
+    }
+    /* line 53, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+    .text-md-right {
+        text-align: right !important;
+    }
+    /* line 56, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+    .text-md-center {
+        text-align: center !important;
+    }
+}
+
+@media (min-width: 992px) {
+    /* line 62, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+    .text-lg-left {
+        text-align: left !important;
+    }
+    /* line 65, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+    .text-lg-right {
+        text-align: right !important;
+    }
+    /* line 68, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+    .text-lg-center {
+        text-align: center !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* line 74, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+    .text-xl-left {
+        text-align: left !important;
+    }
+    /* line 77, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+    .text-xl-right {
+        text-align: right !important;
+    }
+    /* line 80, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+    .text-xl-center {
+        text-align: center !important;
+    }
+}
+
+/* line 85, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+/* line 89, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+/* line 93, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+/* line 97, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.font-weight-light {
+    font-weight: 300 !important;
+}
+
+/* line 101, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.font-weight-lighter {
+    font-weight: lighter !important;
+}
+
+/* line 105, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+
+/* line 109, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+/* line 113, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.font-weight-bolder {
+    font-weight: bolder !important;
+}
+
+/* line 117, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.font-italic {
+    font-style: italic !important;
+}
+
+/* line 121, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-white {
+    color: #fff !important;
+}
+
+/* line 125, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-primary {
+    color: #007bff !important;
+}
+
+/* line 129, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+a.text-primary:hover, a.text-primary:focus {
+    color: #0056b3 !important;
+}
+
+/* line 133, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-secondary {
+    color: #6c757d !important;
+}
+
+/* line 137, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+a.text-secondary:hover, a.text-secondary:focus {
+    color: #494f54 !important;
+}
+
+/* line 141, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-success {
+    color: #28a745 !important;
+}
+
+/* line 145, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+a.text-success:hover, a.text-success:focus {
+    color: #19692c !important;
+}
+
+/* line 149, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-info {
+    color: #17a2b8 !important;
+}
+
+/* line 153, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+a.text-info:hover, a.text-info:focus {
+    color: #0f6674 !important;
+}
+
+/* line 157, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-warning {
+    color: #ffc107 !important;
+}
+
+/* line 161, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+a.text-warning:hover, a.text-warning:focus {
+    color: #ba8b00 !important;
+}
+
+/* line 165, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-danger {
+    color: #dc3545 !important;
+}
+
+/* line 169, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+a.text-danger:hover, a.text-danger:focus {
+    color: #a71d2a !important;
+}
+
+/* line 173, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-light {
+    color: #f8f9fa !important;
+}
+
+/* line 177, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+a.text-light:hover, a.text-light:focus {
+    color: #cbd3da !important;
+}
+
+/* line 181, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-dark {
+    color: #343a40 !important;
+}
+
+/* line 185, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+a.text-dark:hover, a.text-dark:focus {
+    color: #121416 !important;
+}
+
+/* line 189, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-body {
+    color: #212529 !important;
+}
+
+/* line 193, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* line 197, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-black-50 {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* line 201, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* line 205, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+/* line 213, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-decoration-none {
+    text-decoration: none !important;
+}
+
+/* line 217, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-break {
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+/* line 222, ../../Users/Jatin/Web/Portal/wwwroot/scss/utilities/_text.scss */
+.text-reset {
+    color: inherit !important;
+}
+
+/* line 34, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.d-flex {
+    display: flex !important;
+}
+
+/* line 38, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.d-none {
+    display: none !important;
+}
+
+/* line 42, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.position-fixed {
+    position: fixed !important;
+}
+
+/* line 46, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.flex-wrap {
+    flex-flow: row wrap !important;
+}
+
+/* line 56, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.e-grid[data-row-click] .e-rowcell {
+    cursor: pointer;
+}
+
+/* line 60, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.e-spinner-pane {
+    background: #fff6;
+}
+
+/* line 64, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.grey-bg {
+    background: #F7F7F7;
+}
+
+/* line 68, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.collapse {
+    display: none;
+}
+
+/* line 72, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.e-grid .material-icons:not(.e-btn) {
+    position: relative;
+    top: 3px;
+}
+
+/* line 77, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.e-grid .e-btn.e-link.material-icons {
+    color: inherit;
+}
+    /* line 79, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+    .e-grid .e-btn.e-link.material-icons:hover {
+        color: inherit;
+    }
+
+/* line 84, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.e-btn .material-icons {
+    font-size: 16px;
+    line-height: 21px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+/* line 94, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.e-edit-dialog .e-btn {
+    color: #222;
+}
+    /* line 96, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+    .e-edit-dialog .e-btn:hover {
+        color: #666;
+    }
+
+/* line 111, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.search-container {
+    background-color: #fff;
+    border: 1px solid #F0F0F7;
+    margin-bottom: -1px;
+    border-radius: 2px;
+}
+
+/* line 118, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.search-cell {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 8px;
+}
+
+/* line 128, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.e-tooltip-wrap.e-griderror,
+.e-control.e-tooltip-wrap.e-popup.e-griderror {
+    padding: 2px 3px;
+    border-radius: 2px;
+}
+
+    /* line 133, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+    .e-tooltip-wrap.e-griderror .e-tip-content,
+    .e-tooltip-wrap.e-griderror .e-tip-content label {
+        font-size: 12px;
+    }
+
+/* line 137, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.e-arrow-tip {
+    display: none;
+}
+
+/* line 142, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.e-grid .e-add::before,
+.e-grid-menu .e-add::before,
+.e-grid .e-edit::before,
+.e-grid-menu .e-edit::before,
+.e-grid .e-delete::before,
+.e-grid-menu .e-delete::before {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 163, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.e-grid .e-add::before,
+.e-grid-menu .e-add::before {
+    content: 'add';
+}
+
+/* line 167, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.e-grid .e-edit::before,
+.e-grid-menu .e-edit::before {
+    content: 'create';
+}
+
+/* line 171, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.e-grid .e-delete::before,
+.e-grid-menu .e-delete::before {
+    content: 'delete';
+}
+
+/* line 179, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.e-btn.e-flat.overwrite-flat {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+    /* line 182, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+    .e-btn.e-flat.overwrite-flat.e-primary {
+        background: #005CA2;
+        color: #fff;
+    }
+
+    /* line 186, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+    .e-btn.e-flat.overwrite-flat.e-outline.e-primary {
+        background: #fff;
+        color: #005CA2;
+    }
+
+/* line 195, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.deactivate .search-container {
+    background-color: #FCE9EA;
+    border-color: #F2ABB1;
+}
+
+/* line 200, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.deactivate h1, .deactivate h2, .deactivate h3, .deactivate h4, .deactivate h5, .deactivate h6 {
+    color: #931621;
+}
+
+/* line 204, ../../Users/Jatin/Web/Portal/wwwroot/css/style.css */
+.deactivate .e-listview .e-list-item {
+    background-color: rgba(147, 22, 33, 0.05);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Domain\bin\Debug\netstandard2.0\Common.Domain.deps.json
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Domain\bin\Debug\netstandard2.0\Common.Domain.dll
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Domain\bin\Debug\netstandard2.0\Common.Domain.pdb
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Domain\obj\Debug\netstandard2.0\Common.Domain.AssemblyInfoInputs.cache
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Domain\obj\Debug\netstandard2.0\Common.Domain.AssemblyInfo.cs
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Domain\obj\Debug\netstandard2.0\Common.Domain.dll
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Domain\obj\Debug\netstandard2.0\Common.Domain.pdb

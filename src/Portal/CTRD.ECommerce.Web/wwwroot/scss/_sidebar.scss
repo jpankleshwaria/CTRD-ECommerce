@@ -1,0 +1,66 @@
+.pace-sidebar {
+	flex: 0 1 auto;
+	height: calc(100vh - 64px);
+	position: fixed;
+	top: 64px;
+	z-index: 4;
+	background: $tertiary;
+	border: 0;
+}
+
+.pace-sidebar .mdc-list-item {
+	margin: 0;
+	color: #fff;
+	border-bottom: 1px solid scale-color($tertiary, $lightness: 15%);
+}
+
+.pace-sidebar .mdc-list-item--activated {
+	color: #fff;
+	// background: rgba(0, 0, 0, 0.2);
+}
+
+.pace-sidebar :not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item--activated::before {
+    opacity: 0.5;
+}
+
+// keep overlay from greying out text and icon
+.pace-sidebar .mdc-list-item__text,
+.pace-sidebar .mdc-list-item__graphic {
+	z-index: 1;
+}
+
+.pace-sidebar .mdc-list-item__graphic {
+	color: #fff;
+	margin-left: 6px;
+}
+
+.pace-sidebar .mdc-list-item--activated .mdc-list-item__graphic {
+	color: #fff;
+}
+
+.pace-sidebar .mdc-list-item:nth-last-child(1) {
+	border-bottom: 0;
+}
+
+.sidebar-collapsed .pace-sidebar {
+	width: 53px;
+
+	.mdc-list-item__text {
+		display: none;
+	}
+}
+
+// submenu item
+.pace-sidebar .mdc-list-item.subitem {
+	font-size: 0.75rem;
+	background: #0001;
+	height: calc(38px - 2 * 4px);
+	
+	.mdc-list-item__graphic {
+		visibility: hidden;
+	}
+}
+
+.pace-sidebar .bbn {
+	border-bottom: none !important;
+}

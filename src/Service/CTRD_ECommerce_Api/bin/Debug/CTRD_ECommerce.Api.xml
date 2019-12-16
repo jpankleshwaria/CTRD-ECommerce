@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CTRD.ECommerce.Api</name>
+    </assembly>
+    <members>
+        <member name="T:CTRD_ECommerce.Api.Controllers.ProductController">
+            <summary>
+            Product Controller
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Api.Controllers.ProductController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{CTRD_ECommerce.Api.Controllers.ProductController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:CTRD_ECommerce.Api.Controllers.ProductController"/> class.
+            </summary>
+            <param name="mediator">The mediator.</param>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="M:CTRD_ECommerce.Api.Controllers.ProductController.GetProducts(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CTRD_ECommerce.Api.Exceptions.HttpGlobalExceptionFilter">
+            <summary>
+            Http Global Exception Filter, for exception handling
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Api.Exceptions.HttpGlobalExceptionFilter.#ctor(Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILogger{CTRD_ECommerce.Api.Exceptions.HttpGlobalExceptionFilter})">
+            <summary>
+            Constructor of HttpGlobalExceptionFilter class
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Api.Exceptions.HttpGlobalExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            Handle event of exception
+            </summary>
+        </member>
+        <member name="T:CTRD_ECommerce.Api.Exceptions.HttpGlobalExceptionFilter.InternalServerErrorObjectResult">
+            <summary>
+            Error object for 500 status code
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Api.Exceptions.HttpGlobalExceptionFilter.InternalServerErrorObjectResult.#ctor(System.Object)">
+            <summary>
+            Constructor of InternalServerErrorObjectResult class
+            </summary>
+        </member>
+        <member name="T:CTRD_ECommerce.Api.Filters.InternalServerErrorObjectResult">
+            <summary>
+            Error object for 500 status code
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Api.Filters.InternalServerErrorObjectResult.#ctor(System.Object)">
+            <summary>
+            Constructor of InternalServerErrorObjectResult class
+            </summary>
+        </member>
+        <member name="T:CTRD_ECommerce.Api.Filters.SetUserInfoToRequestParamFilter">
+            <summary>
+            RegisterUserFilter
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Api.Filters.SetUserInfoToRequestParamFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            Called after the action executes, before the action result.
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext" />.</param>
+        </member>
+        <member name="M:CTRD_ECommerce.Api.Filters.SetUserInfoToRequestParamFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Called before the action executes, after model binding is complete.
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext" />.</param>
+        </member>
+        <member name="T:CTRD_ECommerce.Api.Helper.DefaultHttpClientAccessor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CTRD_ECommerce.Api.Helper.DefaultHttpClientAccessor.Client">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Api.Helper.DefaultHttpClientAccessor.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CTRD_ECommerce.Api.Interfaces.IHttpClientAccessor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CTRD_ECommerce.Api.Interfaces.IHttpClientAccessor.Client">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CTRD_ECommerce.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:CTRD_ECommerce.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CTRD_ECommerce.Startup">
+            <summary>
+            The Startup Class: Configures services and the app's request pipeline
+            </summary>
+        </member>
+        <member name="M:CTRD_ECommerce.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CTRD_ECommerce.Startup"/> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="P:CTRD_ECommerce.Startup.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>
+            The configuration.
+            </value>
+        </member>
+        <member name="M:CTRD_ECommerce.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the services. 
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:CTRD_ECommerce.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline. 
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

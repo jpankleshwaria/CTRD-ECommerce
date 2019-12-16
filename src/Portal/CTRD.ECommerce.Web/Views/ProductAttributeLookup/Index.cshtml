@@ -1,0 +1,36 @@
+﻿@model IEnumerable<CTRD.ECommerce.Web.Models.Product.ProductAttributeLookup>
+
+@{
+    ViewData["Title"] = "Product Attribute Lookup";
+}
+<div id="ProductAttributeLookupList">
+    <h2>Product Attribute Lookup List</h2>
+
+    <section class="p-4 search-container" style="display:none;">
+        <form id="Services__SearchForm" onsubmit="CTRD.ProductAttributeLookup.submitSearch(event)">
+            <div class="form-row">
+                <div class="col-4">
+                    <ejs-textbox id="ProductAttributeLookupName" type="hidden" name="productAttributeLookupname" placeholder="Product Attribute Lookup Name" floatLabelType="Always"></ejs-textbox>
+                </div>
+                <div class="col-auto ml-auto search-cell">
+                    <ejs-button id="Search" content="Search" isPrimary="true"></ejs-button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section>
+        <ejs-grid id="ProductAttributeLookup__Grid" height="315" load="CTRD.ProductAttributeLookup.load" actionBegin="CTRD.ProductAttributeLookup.actionBegin" actionComplete="CTRD.ProductAttributeLookup.actionComplete" allowPaging="true" allowSorting="true">
+            <e-grid-pagesettings pageSize="20"></e-grid-pagesettings>
+            <e-grid-editSettings allowEditing="true" allowAdding="true" allowDeleting="true" mode="Dialog" template="#Product__EditDialogTemplate"></e-grid-editSettings>
+            <e-grid-columns>
+                <e-grid-column field="attributeId" headerText="ID" width="100" allowEditing="false" isPrimaryKey="true" visible="true"></e-grid-column>
+                <e-grid-column field="prodCatId" headerText="Product Category ID" width="100" allowEditing="false" visible="false"></e-grid-column>
+                <e-grid-column field="categoryName" headerText="Category Name" width="150" allowEditing="false" visible="true"></e-grid-column>
+                <e-grid-column field="attributeName" headerText="Attribute Name" width="250" allowEditing="false" visible="true"></e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+    </section>
+</div>
+
+<script id="ProductAttributeLookup__EditDialogTemplate" type="text/x-template">
+</script>

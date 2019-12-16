@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\Portal",
+    "\\src\\Portal\\CTRD.ECommerce.Web",
+    "\\src\\Portal\\CTRD.ECommerce.Web\\Views",
+    "\\src\\Portal\\CTRD.ECommerce.Web\\Views\\ProductCategory",
+    "\\src\\Service",
+    "\\src\\Service\\Application",
+    "\\src\\Service\\Application\\Commands",
+    "\\src\\Service\\CTRD_ECommerce_Api",
+    "\\src\\Service\\CTRD_ECommerce_Api\\Exceptions"
+  ],
+  "SelectedNode": "\\src\\Portal\\CTRD.ECommerce.Web\\Controllers\\ProductAttributeController.cs",
+  "PreviewInSolutionExplorer": false
+}

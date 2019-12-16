@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CTRD.ECommerce.Web.Models.ProductAttribute.ProductAttribute>
+
+@{
+    ViewData["Title"] = "Product Attribute Values";
+}
+<div id="ProductAttributeList">
+    <h2>Product Attribute Values List</h2>
+
+    <section class="p-4 search-container">
+        <form id="Services__SearchForm" onsubmit="CTRD.ProductAttribute.submitSearch(event)">
+            <div class="form-row">
+                <div class="col-4">
+                    <ejs-dropdownlist id="ProductAttributeName" placeholder="Select Product" floatLabelType="Always" change="CTRD.ProductAttribute.prodChange" data-filter-grid="#ProductAttribute__Grid">
+                        <e-data-manager url="Product/ProductList" adaptor="WebApiAdaptor"></e-data-manager>
+                        <e-dropdownlist-fields text="prodName" value="productId"></e-dropdownlist-fields>
+                    </ejs-dropdownlist>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section>
+        <ejs-grid id="ProductAttribute__Grid" height="315" load="CTRD.ProductAttribute.load" actionBegin="CTRD.ProductAttribute.actionBegin" actionComplete="CTRD.ProductAttribute.actionComplete" toolbar="@(new List<string>() {"Add", "Edit"})" allowPaging="true" allowSorting="true">
+            <e-grid-pagesettings pageSize="20"></e-grid-pagesettings>
+            <e-grid-editSettings allowEditing="true" allowAdding="true" allowDeleting="true" mode="Dialog" template="#ProductAttribute__EditDialogTemplate"></e-grid-editSettings>
+            <e-grid-columns>
+                <e-grid-column field="productId" headerText="Product ID" width="100" allowEditing="false" isPrimaryKey="true" visible="false"></e-grid-column>
+                <e-grid-column field="attributeId" headerText="Attribute ID" width="100" allowEditing="false" isPrimaryKey="true" visible="true"></e-grid-column>
+                <e-grid-column field="prodCatId" headerText="Product Category ID" width="100" allowEditing="false" visible="false"></e-grid-column>
+                <e-grid-column field="categoryName" headerText="Prod Category Name" width="100" allowEditing="false" visible="true"></e-grid-column>
+                <e-grid-column field="prodName" headerText="Product Name" width="150" allowEditing="false" visible="true"></e-grid-column>
+                <e-grid-column field="attributeName" headerText="Attribute Name" width="150" allowEditing="false" visible="true"></e-grid-column>
+                <e-grid-column field="attributeValue" headerText="Attribute Value" width="250" allowEditing="false" visible="true"></e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+    </section>
+</div>
+
+<script id="ProductAttribute__EditDialogTemplate" type="text/x-template">
+</script>

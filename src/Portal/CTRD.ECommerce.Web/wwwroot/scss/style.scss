@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+// The variables!
+@import "variables";
+
+// The Material theme!
+// @import "theme";
+
+// The fixes!
+@import "syncfusion-fixes";
+
+// The components!
+@import "global";
+@import "header";
+@import "headings";
+@import "sidebar";
+@import "panel";
+@import "grid-toolbar";
+@import "dialog";
+
+// The view specific components!
+@import "login";
+
+// The helpers!
+@import "grid";
+@import "forms";
+@import "links";
+@import "utilities/sizing";
+@import "utilities/spacing";
+@import "utilities/text";
+
+
+.d-flex {
+	display: flex !important;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.position-fixed {
+	position: fixed !important;
+}
+
+.flex-wrap {
+	flex-flow: row wrap !important;
+}
+
+// .e-grid.e-gridhover tr[role="row"]:not(.e-editedrow):hover .e-rowcell:not(.e-cellselectionbackground):not(.e-active):not(.e-updatedtd):not(.e-indentcell),
+// .e-grid.e-gridhover tr[role="row"]:hover .e-detailrowcollapse:not(.e-cellselectionbackground):not(.e-active):not(.e-updatedtd):not(.e-indentcell),
+// .e-grid.e-gridhover tr[role="row"]:hover .e-rowdragdrop:not(.e-cellselectionbackground):not(.e-active):not(.e-updatedtd):not(.e-indentcell),
+// .e-grid.e-rtl .e-gridhover tr[role="row"]:hover .e-rowdragdrop:not(.e-cellselectionbackground):not(.e-active):not(.e-updatedtd):not(.e-indentcell),
+// .e-grid.e-gridhover tr[role="row"]:hover .e-detailrowexpand:not(.e-cellselectionbackground):not(.e-active):not(.e-updatedtd):not(.e-indentcell)
+
+.e-grid[data-row-click] .e-rowcell {
+	cursor: pointer;
+}
+
+.e-spinner-pane {
+	background: #fff6;
+}
+
+.grey-bg {
+	background: $grey-background;
+}
+
+.collapse {
+	display: none;
+}
+
+.e-grid .material-icons:not(.e-btn) {
+    position: relative;
+    top: 3px;
+}
+
+.e-grid .e-btn.e-link.material-icons {
+	color: inherit;
+	&:hover {
+		color: inherit;
+	}
+}
+
+.e-btn .material-icons {
+	font-size: 16px;
+	line-height: 21px;
+	height: 25px;
+	vertical-align: middle;
+}
+
+// <div class="e-footer-content"><button type="button" class="e-control e-btn e-lib e-primary e-flat" data-ripple="true">Save</button>
+// <button type="button" class="e-control e-btn e-lib e-flat" data-ripple="true">Cancel</button></div>
+
+.e-edit-dialog .e-btn {
+	color: #222;
+	&:hover {
+		color: #666;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.search-container {
+    background-color: #fff;
+    border: 1px solid #F0F0F7;
+    margin-bottom: -1px;
+    border-radius: 2px;
+}
+
+.search-cell {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 8px;
+}
+
+.e-tip-content {
+
+}
+.e-tooltip-wrap.e-griderror,
+.e-control.e-tooltip-wrap.e-popup.e-griderror {
+	padding: 2px 3px;
+	border-radius: 2px;
+}
+.e-tooltip-wrap.e-griderror .e-tip-content,
+.e-tooltip-wrap.e-griderror .e-tip-content label {
+	font-size: 12px;
+}
+.e-arrow-tip {
+	display: none;
+}
+
+
+.e-grid .e-add::before,
+.e-grid-menu .e-add::before,
+.e-grid .e-edit::before,
+.e-grid-menu .e-edit::before,
+.e-grid .e-delete::before,
+.e-grid-menu .e-delete::before {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-moz-font-feature-settings: 'liga';
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.e-grid .e-add::before,
+.e-grid-menu .e-add::before {
+	content: 'add';
+}
+.e-grid .e-edit::before,
+.e-grid-menu .e-edit::before {
+	content: 'create';
+}
+.e-grid .e-delete::before,
+.e-grid-menu .e-delete::before {
+	content: 'delete';
+}
+
+
+
+// hack
+.e-btn.e-flat.overwrite-flat {
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+}
+.e-btn.e-flat.overwrite-flat.e-primary {
+	background: $primary;
+	color: #fff;
+}
+.e-btn.e-flat.overwrite-flat.e-outline.e-primary {
+	background: #fff;
+	color: $primary;
+}
+
+
+
+
+.deactivate {
+	.search-container {
+		background-color: #FCE9EA;
+		border-color: #F2ABB1;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #931621;
+	}
+
+	.e-listview .e-list-item {
+		background-color: rgba(#931621, 0.05);
+	}
+}

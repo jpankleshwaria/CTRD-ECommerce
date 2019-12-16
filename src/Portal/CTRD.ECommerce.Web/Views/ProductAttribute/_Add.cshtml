@@ -1,0 +1,33 @@
+﻿<div class="form-row">
+    <div class="col">
+        <ejs-dropdownlist id="AddProdCatId" class="required-field" name="prodCatId" placeholder="Product Category Name" change="CTRD.ProductAttribute.prodCatChange"  floatLabelType="Always">
+            <e-data-manager url="ProductCategory/ProductCategoryList" adaptor="WebApiAdaptor"></e-data-manager>
+            <e-dropdownlist-fields text="categoryName" value="prodCatId"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>
+<div class="form-row"></div>
+<div class="form-row">
+    <div class="col">
+        <ejs-dropdownlist id="AddProdId" class="required-field" name="productId" placeholder="Product Name" change="CTRD.ProductAttribute.prodChange" floatLabelType="Always">
+            <e-dropdownlist-fields text="prodName" value="productId"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>
+<div class="form-row"></div>
+<div class="form-row">
+    <div class="col">
+        <ejs-dropdownlist id="AddAttributeId" class="required-field" name="attributeId" placeholder="Attribute Name" floatLabelType="Always">
+            <e-dropdownlist-fields text="attributeName" value="attributeId"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>
+<div class="form-row"></div>
+<div class="form-row">
+    <div class="col">
+        <ejs-textbox id="AddAttributeValue" name="attributeValue" placeholder="Attribute Value" floatLabelType="Always"></ejs-textbox>
+    </div>
+</div>
+
+
+    <ejs-scripts></ejs-scripts>

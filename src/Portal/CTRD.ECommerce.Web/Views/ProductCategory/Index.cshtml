@@ -1,0 +1,23 @@
+﻿@model IEnumerable<CTRD.ECommerce.Web.Models.Product.ProductCategory>
+
+@{
+    ViewData["Title"] = "Product Category List";
+}
+<div id="ProductCategoryList">
+    <h2>Product Category List</h2>
+
+    
+    <section>
+        <ejs-grid id="ProductCategory__Grid" height="315" load="CTRD.ProductCategory.load" actionBegin="CTRD.ProductCategory.actionBegin" actionComplete="CTRD.ProductCategory.actionComplete" allowPaging="true" allowSorting="true">
+            <e-grid-pagesettings pageSize="20"></e-grid-pagesettings>
+            <e-grid-editSettings allowEditing="true" allowAdding="true" allowDeleting="true" mode="Dialog" template="#Product__EditDialogTemplate"></e-grid-editSettings>
+            <e-grid-columns>
+                <e-grid-column field="prodCatId" headerText="Product Category ID" width="100" allowEditing="false" visible="true"></e-grid-column>
+                <e-grid-column field="categoryName" headerText="Product Category Name" width="350" allowEditing="false" visible="true"></e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+    </section>
+</div>
+
+<script id="ProductCategory__EditDialogTemplate" type="text/x-template">
+</script>

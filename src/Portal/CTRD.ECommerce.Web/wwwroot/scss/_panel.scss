@@ -1,0 +1,47 @@
+
+.pace-panel {
+	margin-bottom: 3rem;
+	background: #fff;
+	border: 1px solid rgb(235, 237, 247);
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.pace-panel__title {
+	// margin-top: 0;
+	// margin-left: -2rem;
+	// margin-right: -2rem;
+	// padding: 1.25rem 2rem;
+	// background: rgb(231, 233, 237);
+}
+
+.pace-panel__header {
+	//margin-top: -2rem;
+	//margin-left: -2rem;
+	//margin-bottom: 1rem;
+	//margin-right: -2rem;
+	padding: 1.25rem 1.25rem;
+	background: rgb(231, 233, 237);
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.pace-panel__body {
+	padding: 1.25rem;
+}
+
+.pace-panel--merge-down {
+	margin-bottom: 0;
+	border-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.pace-panel--merge-up {
+	border-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}

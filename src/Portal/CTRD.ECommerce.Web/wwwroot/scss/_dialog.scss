@@ -1,0 +1,31 @@
+.message-icon {
+	width: 90px;
+	height: 90px;
+	background: $primary;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 1rem;
+
+	.dialog-success & {
+		background: #20bf55;
+	}
+
+	.dialog-error & {
+		background: $error-color;
+	}
+
+	.dialog-info & {
+		background: #1e91d6;
+	}
+
+	.dialog-confirm & {
+		background: #1e91d6;
+	}
+}
+
+.message-icon .material-icons {
+	font-size: 48px;
+	color: #fff;
+}

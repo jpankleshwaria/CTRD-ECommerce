@@ -1,0 +1,85 @@
+14-12-2019 2.51.34 AM	This log contains information about the import schema operation into project 'Database' on computer 'TBLSYS037' by user 'JatinA'.
+14-12-2019 2.51.34 AM	Import of database schema has started.
+14-12-2019 2.51.45 AM	Gathering database credentials
+14-12-2019 2.51.45 AM	Gathering database options
+14-12-2019 2.51.45 AM	Gathering generic database scoped configuration option
+14-12-2019 2.51.45 AM	Gathering users
+14-12-2019 2.51.45 AM	Gathering roles
+14-12-2019 2.51.45 AM	Gathering application roles
+14-12-2019 2.51.45 AM	Gathering role memberships
+14-12-2019 2.51.45 AM	Gathering filegroups
+14-12-2019 2.51.45 AM	Gathering full-text catalogs
+14-12-2019 2.51.45 AM	Gathering assemblies
+14-12-2019 2.51.45 AM	Gathering certificates
+14-12-2019 2.51.45 AM	Gathering asymmetric keys
+14-12-2019 2.51.45 AM	Gathering symmetric keys
+14-12-2019 2.51.45 AM	Gathering encrypted symmetric keys
+14-12-2019 2.51.45 AM	Gathering schemas
+14-12-2019 2.51.45 AM	Gathering XML schema collections
+14-12-2019 2.51.45 AM	Gathering user-defined data types
+14-12-2019 2.51.45 AM	Gathering user-defined types
+14-12-2019 2.51.45 AM	Gathering table types
+14-12-2019 2.51.45 AM	Gathering unique keys for table types
+14-12-2019 2.51.45 AM	Gathering primary keys for table types
+14-12-2019 2.51.45 AM	Gathering indexes for table types
+14-12-2019 2.51.45 AM	Gathering check constraints for table types
+14-12-2019 2.51.45 AM	Gathering default constraints for table types
+14-12-2019 2.51.45 AM	Gathering partition functions
+14-12-2019 2.51.45 AM	Gathering partition schemes
+14-12-2019 2.51.47 AM	Gathering functions
+14-12-2019 2.51.47 AM	Gathering encrypted functions
+14-12-2019 2.51.47 AM	Gathering aggregates
+14-12-2019 2.51.47 AM	Gathering procedures
+14-12-2019 2.51.47 AM	Gathering encrypted procedures
+14-12-2019 2.51.47 AM	Gathering tables
+14-12-2019 2.51.47 AM	Gathering primary keys
+14-12-2019 2.51.47 AM	Gathering unique constraints
+14-12-2019 2.51.47 AM	Gathering foreign keys
+14-12-2019 2.51.47 AM	Gathering default constraints
+14-12-2019 2.51.47 AM	Gathering check constraints
+14-12-2019 2.51.47 AM	Gathering views
+14-12-2019 2.51.47 AM	Gathering encrypted views
+14-12-2019 2.51.47 AM	Gathering indexes
+14-12-2019 2.51.47 AM	Gathering statistics
+14-12-2019 2.51.47 AM	Gathering full-text index stoplists
+14-12-2019 2.51.47 AM	Gathering search property lists
+14-12-2019 2.51.47 AM	Gathering search properties
+14-12-2019 2.51.47 AM	Gathering full-text indexes
+14-12-2019 2.51.47 AM	Gathering column store indexes
+14-12-2019 2.51.47 AM	Gathering spatial indexes
+14-12-2019 2.51.47 AM	Gathering XML indexes
+14-12-2019 2.51.47 AM	Gathering Selective XML indexes
+14-12-2019 2.51.47 AM	Gathering encrypted triggers
+14-12-2019 2.51.47 AM	Gathering triggers
+14-12-2019 2.51.47 AM	Gathering encrypted and clr ddl triggers
+14-12-2019 2.51.47 AM	Gathering ddl triggers
+14-12-2019 2.51.47 AM	Gathering synonyms
+14-12-2019 2.51.47 AM	Gathering defaults
+14-12-2019 2.51.47 AM	Gathering data constraint uddt bindings
+14-12-2019 2.51.47 AM	Gathering rules
+14-12-2019 2.51.47 AM	Gathering data constraint uddt bindings
+14-12-2019 2.51.47 AM	Gathering message types
+14-12-2019 2.51.47 AM	Gathering queues
+14-12-2019 2.51.47 AM	Gathering contracts
+14-12-2019 2.51.47 AM	Gathering services
+14-12-2019 2.51.47 AM	Gathering event notifications
+14-12-2019 2.51.47 AM	Gathering remote service bindings
+14-12-2019 2.51.47 AM	Gathering broker priorities
+14-12-2019 2.51.47 AM	Gathering signatures
+14-12-2019 2.51.47 AM	Gathering data compression options
+14-12-2019 2.51.47 AM	Gathering sequence types
+14-12-2019 2.51.48 AM	Gathering security policies
+14-12-2019 2.51.48 AM	Gather column encryption keys
+14-12-2019 2.51.48 AM	Gathering column master keys
+14-12-2019 2.51.48 AM	Gathering external data sources
+14-12-2019 2.51.48 AM	Gathering external file formats
+14-12-2019 2.51.48 AM	Gathering external tables
+14-12-2019 2.51.48 AM	Gathering extended properties
+14-12-2019 2.51.48 AM	Gathering credentials
+14-12-2019 2.51.48 AM	Gathering logins
+14-12-2019 2.51.48 AM	Gathering server audits
+14-12-2019 2.51.48 AM	Scanning project for duplicate elements
+14-12-2019 2.51.48 AM	Finished duplicate element processing
+14-12-2019 2.51.49 AM	Finished importing database.
+14-12-2019 2.51.49 AM	A summary of the import was saved to the following location: D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Database\CTRD_Database\Database\Import Schema Logs\Database_20191213092134.log
+14-12-2019 2.51.49 AM	Click Finish to continue...

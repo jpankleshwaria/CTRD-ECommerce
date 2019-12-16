@@ -1,0 +1,126 @@
+.pace-branding {
+	padding-left: 2px;
+
+	background: #fff;
+	position: relative;
+	flex-grow: 0;
+	// &::after {
+	//	border-right: 120px solid transparent;
+	//	border-top: 115px solid #fff;
+	// }
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 100%;
+		width: 0;
+		height: 0;
+		border-right: 115px solid transparent;
+		border-top: 110px solid #fff;
+	}
+
+	.material-icons {
+		color: #222;
+	}
+}
+
+.pace-logo {
+	// margin-top: 5px;
+	// height: 40px;
+}
+
+.pace-account-link {
+	display: flex;
+	align-items: center;
+}
+
+.pace-icon-circle {
+	background: $tertiary;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	margin-right: 15px;
+	justify-content: center;
+	align-items: center;
+	padding-left: 1px;
+	padding-bottom: 2px;
+}
+
+.pace-welcome {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 17px;
+}
+
+.pace-welcome-name {
+	display: block;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.pace-status {
+	display: flex;
+	margin-right: 30px;
+}
+
+.pace-status-chip {
+	background: #fff;
+	border: 2px solid $tertiary;
+	border-radius: 15px;
+	margin: 0 10px;
+	font-size: 14px;
+	color: $tertiary;
+	height: 30px;
+	display: flex;
+	padding: 0 16px 0 0;
+	align-items: center;
+	font-weight: 500;
+}
+
+.pace-status-chip-icon {
+	font-size: 21px;
+	border-radius: 15px;
+	height: 30px;
+	width: 30px;
+	line-height: 29px;
+	text-align: center;
+	margin: 0 6px 0 -2px;
+	color: #fff;
+	background: $tertiary;
+}
+
+$green: #A2CF4B;
+$orange: #ED881E;
+
+.pace-status-chip--call {
+	border-color: $green;
+	color: $green;
+	.pace-status-chip-icon {
+		background: $green;
+	}
+}
+
+.pace-status-chip--disconnected {
+	border-color: $orange;
+	color: $orange;
+	padding-right: 0;
+	.pace-status-chip-icon {
+		color: $orange;
+		background: transparent;
+		margin-right: -2px;
+		margin-left: -2px;
+	}
+}
+
+.pace-status-chip--idle {
+	border-color: $orange;
+	color: $orange;
+	.pace-status-chip-icon {
+		background: $orange;
+	}
+}
+
+.pace-status-chip-label {
+
+}

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CTRD.ECommerce.Web.Models.Product.Product>
+
+@{
+    ViewData["Title"] = "Product List";
+}
+<div id="ProductList">
+    <h2>Product List</h2>
+
+    <section class="p-4 search-container">
+        <form id="Services__SearchForm" onsubmit="CTRD.Product.submitSearch(event)">
+            <div class="form-row">
+                <div class="col-4">
+                    <ejs-textbox id="ProductName" name="productname" placeholder="Product Name" floatLabelType="Always"></ejs-textbox>
+                </div>
+                <div class="col-auto ml-auto search-cell">
+                    <ejs-button id="Search" content="Search" isPrimary="true"></ejs-button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section>
+        <ejs-grid id="Product__Grid" height="315" load="CTRD.Product.load" actionBegin="CTRD.Product.actionBegin" actionComplete="CTRD.Product.actionComplete" toolbar="@(new List<string>() {"Add", "Edit"})" allowPaging="true" allowSorting="true">
+            <e-grid-pagesettings pageSize="10"></e-grid-pagesettings>
+            <e-grid-editSettings allowEditing="true" allowAdding="true" allowDeleting="true" mode="Dialog" template="#Product__EditDialogTemplate"></e-grid-editSettings>
+            <e-grid-columns>
+                <e-grid-column field="productId" headerText="Product ID" width="100" allowEditing="false" isPrimaryKey="true" visible="false"></e-grid-column>
+                <e-grid-column field="prodCatId" headerText="Product Category ID" width="100" allowEditing="false" visible="false"></e-grid-column>
+                <e-grid-column field="prodCatName" headerText="Prod Category" width="150" allowEditing="false" visible="true"></e-grid-column>
+                <e-grid-column field="prodName" headerText="Product Name" width="250" allowEditing="false" visible="true"></e-grid-column>
+                <e-grid-column field="prodDescription" headerText="Product Description" width="450" allowEditing="false" visible="true"></e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+    </section>
+</div>
+
+<script id="Product__EditDialogTemplate" type="text/x-template">
+</script>

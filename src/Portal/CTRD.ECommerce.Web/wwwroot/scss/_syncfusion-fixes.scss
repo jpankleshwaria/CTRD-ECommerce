@@ -1,0 +1,61 @@
+/* make SyncFusion consistent */
+
+// headings
+.e-dlg-header,
+.e-dlg-header * {
+	color: $primary;
+}
+
+// validation messages
+// .e-error:not(.e-disabled) + .e-helper-line .e-helper-text--validation-msg {
+// 	color: $error-color;
+// }
+
+.e-helper-text {
+	font-size: .75rem;
+	margin: 3px 0;
+	// transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+	// opacity: 0;
+	// will-change: opacity;
+}
+
+.e-ddl .e-helper-text {
+	position: absolute;
+	bottom: -25px;
+}
+
+// .e-helper-text:not(:empty) {
+// 	opacity: 1;
+// }
+
+// .e-helper-text .e-error {
+// 	font-size: inherit;
+// }
+
+// .e-error + .e-helper-line .e-helper-text--validation-msg {
+//	opacity: 1;
+// }
+
+.required-field ~ label:not(.e-helper-text)::after {
+	content: " * ";
+	color: $error-color;
+	font-size: 16px;
+	line-height: 10px;
+}
+
+.e-tab .e-tab-header .e-toolbar-item .e-tab-text {
+	letter-spacing: 1px;
+}
+
+.e-float-input.e-date-range-wrapper .e-daterange-hidden {
+	display: none;
+}
+
+
+
+// fix dialog grids
+.e-edit-dialog .e-gridform .e-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}

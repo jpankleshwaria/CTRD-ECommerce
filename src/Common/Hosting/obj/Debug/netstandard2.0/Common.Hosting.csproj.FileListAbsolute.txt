@@ -1,0 +1,7 @@
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Hosting\bin\Debug\netstandard2.0\Common.Hosting.deps.json
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Hosting\bin\Debug\netstandard2.0\Common.Hosting.dll
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Hosting\bin\Debug\netstandard2.0\Common.Hosting.pdb
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Hosting\obj\Debug\netstandard2.0\Common.Hosting.AssemblyInfoInputs.cache
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Hosting\obj\Debug\netstandard2.0\Common.Hosting.AssemblyInfo.cs
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Hosting\obj\Debug\netstandard2.0\Common.Hosting.dll
+D:\Jatin\Work\Reading Interview Talk\Practical\Code challenge-V2\Source\CTRD_ECommerce\src\Common\Hosting\obj\Debug\netstandard2.0\Common.Hosting.pdb

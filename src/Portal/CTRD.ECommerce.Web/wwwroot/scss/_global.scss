@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: $theme-background;
+}
+
+.pace-top-app-bar {
+	z-index: 6;
+}
+
+.pace-content-root {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.main-content {
+	flex: 0 0 calc(100% - 256px);
+	margin-left: 256px;
+	padding: 2rem 3rem;
+	overflow: auto;
+	// min-height: calc(100vh - 64px);
+	max-width: 1200px;
+
+	.sidebar-collapsed & {
+		flex: 0 0 calc(100% - 53px);
+		margin-left: 53px;
+	}
+}
+
+body.loading .main-content {
+	visibility: hidden;
+}

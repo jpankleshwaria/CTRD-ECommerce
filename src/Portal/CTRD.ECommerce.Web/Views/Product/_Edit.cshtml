@@ -1,0 +1,22 @@
+﻿
+<div class="form-row">
+    <div class="col">
+        <input type="hidden" name="productId" id="productId">
+        <ejs-dropdownlist enabled="false" id="EditProdCatId" class="required-field" name="prodCatId" placeholder="Product Category Name" floatLabelType="Always">
+            <e-data-manager url="ProductCategoryList" adaptor="WebApiAdaptor"></e-data-manager>
+            <e-dropdownlist-fields text="categoryName" value="prodCatId"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>
+<div class="form-row">
+    <div class="col">
+        <ejs-textbox id="EditProdName" name="prodName" placeholder="Product Name" floatLabelType="Always"></ejs-textbox>
+    </div>
+</div>
+<div class="form-row">
+    <div class="col">
+        <ejs-textbox id="EditDescription" name="prodDescription" placeholder="Product Description" floatLabelType="Always" multiline="true"></ejs-textbox>
+    </div>
+</div>
+
+<ejs-scripts></ejs-scripts>
